@@ -1,7 +1,6 @@
 import React from 'react';
 import Translate, { translate } from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { Link } from '@docusaurus/router';
 import FeatureCard from './FeatureCard';
 
 import styles from './Features.module.scss';
@@ -9,7 +8,7 @@ import styles from './Features.module.scss';
 const FEATURES = [
   {
     image: '/img/features/lock.svg',
-    title: translate({ message: 'Use private packages' }),
+    title: translate({ message: 'Harmonic interfaces' }),
     subtitle: translate({
       message:
         'If you want to use all benefits of npm package system in your company without sending all the code to the public, and use your private packages just as easy as public ones.',
@@ -17,7 +16,7 @@ const FEATURES = [
   },
   {
     image: '/img/features/link.svg',
-    title: translate({ message: 'Link multiple registries' }),
+    title: translate({ message: 'Easy maintenance.' }),
     subtitle: translate({
       message:
         'If you use multiple registries in your organization and need to fetch packages from multiple sources in one single project, you can chain multiple registries and fetch from one single endpoint.',
@@ -25,7 +24,7 @@ const FEATURES = [
   },
   {
     image: '/img/features/box.svg',
-    title: translate({ message: 'Cache npmjs.org registry' }),
+    title: translate({ message: 'Beautiful applications.' }),
     subtitle: translate({
       message:
         'If you have more than one server which you want to install packages from, you might want to use this to decrease latency and provide limited failover.',
@@ -33,7 +32,7 @@ const FEATURES = [
   },
   {
     image: '/img/features/override.svg',
-    title: translate({ message: 'Override public packages' }),
+    title: translate({ message: 'Always think scalability' }),
     subtitle: translate({
       message:
         'If you want to use a modified version of some 3rd-party package, you can publish your version locally under the same name.',
@@ -49,9 +48,6 @@ const Features = (): React.ReactElement => (
       ))}
     </div>
     <div className={styles.linkFeatures}>
-      <Link to={useBaseUrl('/docs/configuration')} className="link-primary">
-        <Translate>Discover more features</Translate>
-      </Link>
     </div>
   </section>
 );

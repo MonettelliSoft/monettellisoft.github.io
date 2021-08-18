@@ -13,17 +13,17 @@ const Header = (): React.ReactElement => {
   return (
     <div className={styles.header}>
       <div className={styles['header--wrap']}>
-        <img className={styles['header--imageLogo']} src={useBaseUrl('/img/verdaccio-tiny.svg')} alt="Verdaccio Logo" />
+        <img className={styles['header--imageLogo']} src={useBaseUrl('/img/xamarin_community_guide_brand.svg')} alt="Verdaccio Logo" />
         <div className={styles['header--mt-2']}>
-          <h1 className={styles['header--title']}>Verdaccio</h1>
+          <h1 className={styles['header--title']}>Xamarin Community Guide</h1>
           <p className={styles['header--subtitle']}>
-            <Translate>A lightweight private npm proxy registry</Translate>
+            <Translate>Community Guide to creating beautiful interfaces in Xamarin.Forms</Translate>
           </p>
           <div className={styles['header--links']}>
-            <a href="https://github.com/verdaccio/verdaccio" className="link-secondary">
+            <a href="https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io" className="link-secondary">
               GITHUB
             </a>
-            <Link to={useBaseUrl('/docs/what-is-verdaccio')} className="link-primary">
+            <Link to={useBaseUrl('/docs/what-is-xamarin-community-guide')} className="link-primary">
               <Translate>GET STARTED</Translate>
             </Link>
             <a href="https://github.com/verdaccio/verdaccio/blob/master/CONTRIBUTING.md" className="link-secondary">
@@ -32,10 +32,7 @@ const Header = (): React.ReactElement => {
           </div>
         </div>
         <div className={styles['header--m-2']}>
-          <Command
-            command="npm install --global verdaccio"
-            alt={translate({ message: 'NPM command to install Verdaccio' })}
-          />
+          
         </div>
       </div>
       <div className={styles['header--absolute-links']}>

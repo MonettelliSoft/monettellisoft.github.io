@@ -5,8 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Header from '../components/Header';
 import UsedBy from '../components/UsedBy';
 import Feature from '../components/Features';
-import WhatIsVerdaccio from '../components/WhatIsVerdaccio';
-import PackageManagers from '../components/PackageManagers';
+import WhatIsXamarinCommunityGuide from '../components/WhatIsXamarinCommunityGuide';
 import Testimonial from '../components/Testimonials';
 import Wave from '../components/Wave';
 
@@ -22,9 +21,8 @@ const Home = (): React.ReactElement => {
       </header>
       <main className={styles.main}>
         <UsedBy />
-        <WhatIsVerdaccio />
+        <WhatIsXamarinCommunityGuide />
         <Feature />
-        <PackageManagers />
         <Testimonial />
       </main>
     </Layout>

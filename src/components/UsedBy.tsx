@@ -11,56 +11,23 @@ const UsedBy = (): React.ReactElement => (
   <section className={styles.usedBy}>
     <div className={styles['usedBy--main']}>
       <b>
-        <Translate>SPONSORED BY</Translate>
+        <Translate>SUPPORTING GROUPS.</Translate>
       </b>
       {[
         {
-          name: 'SheetJs',
-          image: useBaseUrl('/img/sponsors/sheetjs.png'),
-          url: 'https://sheetjs.com/',
+          name: 'Xamarin/.NET MAUI Community',
+          image: useBaseUrl('/img/sponsors/xamarin_net_maui_community_in_spanish_logo.svg'),
+          url: 'https://www.facebook.com/groups/xamarindiplomadoitc',
         },
         {
-          name: 'GatsbyJs',
-          image: useBaseUrl('/img/sponsors/gatsbysvg.svg'),
+          name: 'Xamarin Latino',
+          image: useBaseUrl('/img/sponsors/xamarin_latino_logo.svg'),
           url: 'https://www.gatsbyjs.com/',
         },
-      ].map((sponsor) => (
-        <SponsorImage key={sponsor.name} name={sponsor.name} image={sponsor.image} url={sponsor.url} />
-      ))}
-      <Divider vertical />
-      <b>
-        <Translate>USED BY</Translate>
-      </b>
-      {[
         {
-          name: 'pnpm',
-          image: useBaseUrl('/img/sponsors/pnpm.svg'),
-          url: 'https://pnpm.io',
-        },
-        {
-          name: 'React',
-          image: useBaseUrl('/img/sponsors/react.svg'),
-          url: ' https://reactjs.org',
-        },
-        {
-          name: 'Angular',
-          image: useBaseUrl('/img/sponsors/angular.svg'),
-          url: 'https://angular.io',
-        },
-        {
-          name: 'vendure',
-          image: useBaseUrl('/img/sponsors/vendure.png'),
-          url: 'https://www.vendure.io/',
-        },
-        {
-          name: 'aurelia',
-          image: useBaseUrl('/img/sponsors/aurelia.svg'),
-          url: 'https://aurelia.io/',
-        },
-        {
-          name: 'Storybook',
-          image: useBaseUrl('/img/sponsors/storybook.svg'),
-          url: 'https://storybook.js.org/',
+          name: 'El Camino Dev',
+          image: useBaseUrl('/img/sponsors/el_camino_dev_logo.svg'),
+          url: 'https://elcamino.dev/',
         },
       ].map((sponsor) => (
         <SponsorImage key={sponsor.name} name={sponsor.name} image={sponsor.image} url={sponsor.url} />

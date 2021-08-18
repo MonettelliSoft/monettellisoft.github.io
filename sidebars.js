@@ -17,88 +17,8 @@ module.exports = {
       type: "category",
       label: "Introduction",
       items: [
-        "what-is-verdaccio",
-        "installation",
-        "cli",
-        "cli-registry",
-        "who-is-using",
-        "best",
-        "protect-your-dependencies",
-        "security-policy",
-        "logo",
-        {
-          type: "category",
-          label: "Uses Cases",
-          items: ["e2e", "caching", "github-actions", "linking-remote-registry"]
-        },
-        {
-          type: "category",
-          label: "Talks & Articles",
-          items: ["articles", "talks"]
-        },
+        "what-is-xamarin-community-guide"
       ]
     },
-    {
-      type: "category",
-      label: "Features",
-      items: [
-        "configuration",
-        "uplinks",
-        "packages",
-        "authentication",
-        "notifications",
-        "logger",
-        "webui"
-      ]
-    },
-    {
-      type: "category",
-      label: "Server",
-      items: [
-        "server-configuration",
-        "reverse-proxy",
-        "ssl",
-        "windows",
-        "iss-server"
-      ]
-    },
-    {
-      type: "category",
-      label: "Development",
-      items: [
-        "plugins",
-        "dev-plugins",
-        {
-          type: "category",
-          label: "Dev Guides",
-          items: ["plugin-generator", "plugin-auth", "plugin-middleware", "plugin-storage"]
-        },
-        "node-api"
-      ]
-    },
-    {
-      type: "category",
-      label: "DevOps",
-      items: [
-        "docker",
-        "kubernetes",
-        "ci",
-        {
-          type: "category",
-          label: "Cloud",
-          items: ["amazon"]
-        },
-        {
-          type: "category",
-          label: "Tools",
-          items: ["ansible", "puppet", "chef"]
-        },
-      ]
-    },
-    {
-      type: "category",
-      label: "Guides",
-      items: ["aws"]
-    }
   ]
 };

@@ -27,8 +27,8 @@ const pkgJson = require('./package.json')
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Verdaccio',
-  tagline: 'A lightweight open source private npm proxy registry',
+  title: 'Xamarin Community Guide',
+  tagline: 'Community guide to creating beautiful interfaces in Xamarin.Forms',
   organizationName: 'MonettelliSoft',
   projectName: 'monettellisoft.github.io',
   url: 'https://monettellisoft.github.io',
@@ -36,7 +36,7 @@ module.exports = {
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo/symbol/svg/verdaccio-tiny.svg',
+  favicon: 'img/logo/symbol/svg/xamarin_community_guide_brand.svg',
   // i18n: i18nConfig,
   plugins: [
     'docusaurus-plugin-sass',
@@ -59,7 +59,7 @@ module.exports = {
     announcementBar: {
       id: 'announcementBar',
       content:
-        'If you like Verdaccio, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/verdaccio/verdaccio">GitHub</a>! ⭐',
+        'If you like Xamarin Community Guide, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io">GitHub</a>! ⭐',
     },
     algolia: {
       apiKey: 'a8b4d117e513cd8d71d6a95e3d9d4a91',
@@ -70,15 +70,15 @@ module.exports = {
       trackingID: 'UA-2527438-21'
     } : undefined,
     navbar: {
-      title: `Verdaccio - v${pkgJson.version}`,
+      title: `Xamarin Community Guide`,
       logo: {
-        alt: 'Verdaccio Logo',
-        src: 'img/verdaccio-tiny.svg',
+        alt: 'Xamarin Community Guide Logo',
+        src: 'img/xamarin_community_guide_brand.svg',
       },
       items: [
         {
           type: 'doc',
-          docId: 'what-is-verdaccio',
+          docId: 'what-is-xamarin-community-guide',
           position: 'left',
           label: 'Docs',
         },
@@ -121,19 +121,7 @@ module.exports = {
           items: [
             {
               label: 'Getting Started',
-              to: '/docs/what-is-verdaccio',
-            },
-            {
-              label: 'Docker',
-              to: '/docs/docker',
-            },
-            {
-              label: 'Configuration',
-              to: '/docs/configuration',
-            },
-            {
-              label: 'Logos',
-              to: '/docs/logo',
+              to: '/docs/what-is-xamarin-community-guide',
             },
           ],
         },
@@ -142,15 +130,15 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/verdaccio',
+              href: 'https://stackoverflow.com/questions/tagged/xamarincommunityguide',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/verdaccio',
+              href: 'https://discordapp.com/invite/xamarincommunityguide',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/verdaccio_npm',
+              href: 'https://twitter.com/xamarincommunityguide',
             },
           ],
         },
@@ -179,7 +167,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Verdaccio community. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Xamarin Community Guide. Built with Docusaurus.`,
     },
     hideableSidebar: true,
     colorMode: {
