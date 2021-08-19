@@ -40,7 +40,7 @@ module.exports = {
   // i18n: i18nConfig,
   plugins: [
     'docusaurus-plugin-sass',
-    isProductionDeployment && ['docusaurus-plugin-sentry', { DSN: 'a7bc89ee3f284570b1d9a47e600e7597' }]
+    isProductionDeployment && ['docusaurus-plugin-sentry', { DSN: 'e494731288eb4948852561c19000c423' }]
   ].filter(Boolean),
   webpack: {
     jsLoader: (isServer) => ({
@@ -53,7 +53,7 @@ module.exports = {
     }),
   },
   customFields: {
-    description: 'A lightweight private NPM proxy registry built in Node.js.'
+    description: 'Community guide to creating beautiful interfaces in Xamarin.Forms'
   },
   themeConfig: {
     announcementBar: {
@@ -62,13 +62,17 @@ module.exports = {
         'If you like Xamarin Community Guide, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io">GitHub</a>! ⭐',
     },
     algolia: {
-      apiKey: 'a8b4d117e513cd8d71d6a95e3d9d4a91',
+      apiKey: '082aaca59b344caf6d08e21b780cc0c4',
       indexName: 'xamarincommunityguide',
       contextualSearch: true
     },
-    googleAnalytics: isProductionDeployment ? {
-      trackingID: 'UA-2527438-21'
-    } : undefined,
+    // googleAnalytics: isProductionDeployment ? {
+    //   trackingID: 'G-3ZJ7Q4HRH7'
+    // } : undefined,
+    gtag: isProductionDeployment ? {
+      // You can also use your "G-" Measurement ID here.
+      trackingID: 'G-3ZJ7Q4HRH7'
+    }: undefined,
     navbar: {
       title: `Xamarin Community Guide`,
       logo: {
