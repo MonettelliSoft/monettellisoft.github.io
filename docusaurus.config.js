@@ -66,9 +66,6 @@ module.exports = {
       indexName: 'xamarincommunityguide',
       contextualSearch: true
     },
-    // googleAnalytics: isProductionDeployment ? {
-    //   trackingID: 'G-3ZJ7Q4HRH7'
-    // } : undefined,
     gtag: isProductionDeployment ? {
       // You can also use your "G-" Measurement ID here.
       trackingID: 'G-3ZJ7Q4HRH7'
