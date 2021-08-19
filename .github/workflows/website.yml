@@ -1,4 +1,4 @@
-name: Xamarin Community Guide Docs
+name: Xamarin Community Guide Website - CI/CD
 
 on:
   pull_request:
