@@ -2,7 +2,7 @@
 @import '_headers.scss';
 
 :root {
-  --ifm-color-primary: var(--verdaccio-color);
+  --ifm-color-primary: var(--xamarincommunityguide-color);
   --ifm-color-primary-dark: #44553a;
   --ifm-color-primary-darker: #415036;
   --ifm-color-primary-darkest: #35422d;
@@ -16,7 +16,7 @@
   --grey-darker: #b7b7b7;
   --grey-light: #f7f7f7;
   --grey-lighter: #f9f9f9;
-  --verdaccio-color: #4a5e3e;
+  --xamarincommunityguide-color: #4a5e3e;
   --twitter-color: #1595de;
   /*button color*/
   --red: #133B7F;
@@ -41,7 +41,7 @@ html[data-theme='dark']:root {
 
   --grey-lighter: #041329;
   --p-color: #b7b7b7;
-  --verdaccio-color: #fff;
+  --xamarincommunityguide-color: #fff;
   --grey: #f3f3f338;
 }
 
@@ -65,7 +65,7 @@ div[role='banner'] {
 
 ::-moz-selection {
   color: var(--ifm-color-white);
-  background: var(--verdaccio-color);
+  background: var(--xamarincommunityguide-color);
 }
 
 a:hover {
@@ -74,7 +74,7 @@ a:hover {
 
 ::selection {
   color: var(--ifm-color-white);
-  background: var(--verdaccio-color);
+  background: var(--xamarincommunityguide-color);
 }
 
 .main-wrapper {
@@ -85,7 +85,7 @@ a[aria-current='page'] {
   /* important because text-decoration none on hover */
   text-decoration: underline !important;
   text-underline-position: under;
-  color: var(--verdaccio-color);
+  color: var(--xamarincommunityguide-color);
 }
 
 .docusaurus-highlight-code-line {

@@ -18,7 +18,7 @@ const WhatIs = (): React.ReactElement => (
         of harmonious, easy-to-maintain and beautiful interfaces.
       </Translate>
     </p>
-    <Link to={useBaseUrl('/docs/installation')} className="link-primary">
+    <Link to={useBaseUrl('/docs/what-is-xamarin-community-guide')} className="link-primary">
       <Translate>Xamarin Community Guide Docs</Translate>
     </Link>
     <Divider />

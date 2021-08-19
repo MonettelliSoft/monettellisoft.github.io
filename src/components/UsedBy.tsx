@@ -11,7 +11,7 @@ const UsedBy = (): React.ReactElement => (
   <section className={styles.usedBy}>
     <div className={styles['usedBy--main']}>
       <b>
-        <Translate>SUPPORTING GROUPS.</Translate>
+        <Translate>SUPPORT GROUPS</Translate>
       </b>
       {[
         {
@@ -22,8 +22,16 @@ const UsedBy = (): React.ReactElement => (
         {
           name: 'Xamarin Latino',
           image: useBaseUrl('/img/sponsors/xamarin_latino_logo.svg'),
-          url: 'https://www.gatsbyjs.com/',
+          url: 'https://www.facebook.com/groups/xamarin.latino',
         },
+      ].map((sponsor) => (
+        <SponsorImage key={sponsor.name} name={sponsor.name} image={sponsor.image} url={sponsor.url} />
+      ))}
+      <Divider vertical />
+      <b>
+        <Translate>SPONSORED BY</Translate>
+      </b>
+      {[
         {
           name: 'El Camino Dev',
           image: useBaseUrl('/img/sponsors/el_camino_dev_logo.svg'),

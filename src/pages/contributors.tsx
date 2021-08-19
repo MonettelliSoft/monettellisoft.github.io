@@ -5,7 +5,7 @@ import Translate, { translate } from '@docusaurus/Translate';
 import styles from './contributors.module.scss';
 
 const Contributors = (): React.ReactElement => (
-  <Layout title="Contributors" description="Verdaccio Contributors, thanks to the community Verdaccio keeps running">
+  <Layout title="Contributors" description="Xamarin Community Guide contributors, thanks to you that this is a reality.">
     <div className={styles.wrapper}>
       <header>
         <h1>
@@ -13,8 +13,8 @@ const Contributors = (): React.ReactElement => (
         </h1>
         <p>
           <Translate>
-            Thanks to everyone involved in maintaining and improving Verdaccio, this page is to thank you every minute
-            spent here.
+          Many thanks to everyone who contributes to Xamarin Community Guide, 
+          this project would not be a reality without you.
           </Translate>{' '}
           <b>
             <Translate>Thanks</Translate>
@@ -24,10 +24,10 @@ const Contributors = (): React.ReactElement => (
       <main>
         <div className={styles['mt-2']}>
           <iframe
-            src="https://verdacciocontributors.gtsb.io/"
+            src="https://contrib.rocks/image?repo=XamarinCommunityGuide/xamarincommunityguide.github.io"
             frameBorder="0"
             scrolling="yes"
-            title={translate({ message: 'Contributors of Verdaccio' })}
+            title={translate({ message: 'Contributors of Xamarin Community Guide' })}
             width="100%"
             className={styles['h-screen']}
           />

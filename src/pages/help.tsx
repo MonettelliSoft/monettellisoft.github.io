@@ -14,7 +14,7 @@ const Help = (): React.ReactElement => {
   return (
     <Layout
       title="Help"
-      description="Verdaccio Help, where you'll find all the links to find help and assistance from Verdaccio contributors"
+      description="Xamarin Community Guide Help, where you'll find all the links to find help and assistance from Xamarin Community Guide contributors"
     >
       <div className={styles.wrapper}>
         <header>
@@ -22,7 +22,7 @@ const Help = (): React.ReactElement => {
             <Translate>Need help?</Translate>
           </h1>
           <p>
-            <Translate>This project is maintained by the Verdaccio community.</Translate>
+            <Translate>This project is maintained by the Xamarin Community Guide Support.</Translate>
           </p>
         </header>
         <main className={clsx(styles.grid, styles['items-center'], styles['grid-2-1fr'])}>
@@ -36,11 +36,12 @@ const Help = (): React.ReactElement => {
           </div>
           <iframe
             className={styles['m-auto']}
-            title="Discord Widget of Verdaccio"
-            src="https://discord.com/widget?id=388674437219745793&theme=dark"
+            title="Discord Widget of Xamarin Community Guide"
+            src="https://discord.com/widget?id=877758367467196466&theme=dark"
             width="350"
             height="500"
             frameBorder="0"
+            
           />
         </main>
       </div>
@@ -63,7 +64,7 @@ const SUPPORT_LINKS = (lang: string) => [
           ),
         }}
       >
-        {'Learn more about Verdaccio using the {link}'}
+        {'Learn more about Xamarin Community Guide using the {link}'}
       </Translate>
     ),
   },
@@ -72,7 +73,7 @@ const SUPPORT_LINKS = (lang: string) => [
     content: (
       <Translate
         values={{
-          follow: <Follow username="verdaccio_npm" options={{ showCount: false, dnt: true, lang }} />,
+          follow: <Follow username="DanielMonetelli" options={{ showCount: false, dnt: true, lang }} />,
         }}
       >
         {'You can follow and contact us on {follow}'}
@@ -85,7 +86,7 @@ const SUPPORT_LINKS = (lang: string) => [
       <Translate
         values={{
           link: (
-            <a href="https://github.com/verdaccio/verdaccio/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Aquestion+">
+            <a href="https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io/discussions">
               <Translate>Question Database</Translate>
             </a>
           ),
@@ -101,7 +102,7 @@ const SUPPORT_LINKS = (lang: string) => [
       <Translate
         values={{
           link: (
-            <a href="https://stackoverflow.com/questions/tagged/verdaccio">
+            <a href="https://stackoverflow.com/questions/tagged/xamarincommunityguide">
               <Translate>Stackoverflow Questions</Translate>
             </a>
           ),
@@ -116,10 +117,10 @@ const SUPPORT_LINKS = (lang: string) => [
     content: (
       <Translate
         values={{
-          link: <a href="https://discord.gg/T7gJmBM6nv">Discord</a>,
+          link: <a href="https://discord.gg/yk5MzThrV4">Discord</a>,
         }}
       >
-        {'and also you can chat with the Verdaccio community at {link}'}
+        {'and also you can chat with the Xamarin Community Guide at {link}'}
       </Translate>
     ),
   },
@@ -129,7 +130,7 @@ const SUPPORT_LINKS = (lang: string) => [
       <Translate
         values={{
           link: (
-            <a href="https://discord.gg/PKwUpW">
+            <a href="https://discord.gg/yk5MzThrV4">
               <Translate>Community Chat</Translate>
             </a>
           ),
@@ -145,7 +146,7 @@ const SUPPORT_LINKS = (lang: string) => [
       <Translate
         values={{
           link: (
-            <a href="https://discord.gg/x9F2jJ">
+            <a href="https://discord.gg/yk5MzThrV4">
               <Translate>Community Chat</Translate>
             </a>
           ),

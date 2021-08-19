@@ -36,7 +36,7 @@ module.exports = {
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/logo/symbol/svg/xamarin_community_guide_brand.svg',
+  favicon: 'img/favicon/favicon.ico',
   // i18n: i18nConfig,
   plugins: [
     'docusaurus-plugin-sass',
@@ -63,7 +63,7 @@ module.exports = {
     },
     algolia: {
       apiKey: 'a8b4d117e513cd8d71d6a95e3d9d4a91',
-      indexName: 'verdaccio',
+      indexName: 'xamarincommunityguide',
       contextualSearch: true
     },
     googleAnalytics: isProductionDeployment ? {
@@ -86,7 +86,7 @@ module.exports = {
         { to: '/help', label: 'Help', position: 'left' },
 
         {
-          href: 'https://opencollective.com/verdaccio',
+          href: 'https://opencollective.com/xamarin-community-guide',
           label: 'Sponsor us',
           position: 'right',
         },
@@ -100,13 +100,13 @@ module.exports = {
           position: 'right',
           dropdownItemsAfter: [
             {
-              href: 'https://crowdin.com/project/verdaccio',
+              href: 'https://crowdin.com/project/xamarincommunityguide',
               label: 'Help Us Translate',
             },
           ],
         },
         {
-          href: 'https://github.com/verdaccio/verdaccio',
+          href: 'https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -134,11 +134,11 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/xamarincommunityguide',
+              href: 'https://discord.gg/yk5MzThrV4',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/xamarincommunityguide',
+              href: 'https://twitter.com/search?q=%23XamarinCommunityGuide&src=typed_query',
             },
           ],
         },
@@ -151,11 +151,11 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/verdaccio/verdaccio',
+              href: 'https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/verdaccio_npm',
+              href: 'https://twitter.com/xamarincommunityguide',
             },
             {
               html: `
@@ -194,14 +194,14 @@ module.exports = {
           ],
           editUrl: ({ locale, docPath }) => {
             if (locale !== 'en') {
-              return `https://crowdin.com/project/verdaccio/${locale}`;
+              return `https://crowdin.com/project/xamarincommunityguide/${locale}`;
             }
-            return `https://github.com/verdaccio/verdaccio/edit/master/website/docs/${docPath}`;
+            return `https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io/edit/master/docs/${docPath}`;
           },
         },
         blog: {
-          blogTitle: 'Verdaccio Official Blog',
-          blogDescription: 'The official Verdaccio NPM proxy registry blog',
+          blogTitle: 'Xamarin Community Guide',
+          blogDescription: 'Community Guide to creating beautiful interfaces in Xamarin.Forms',
           showReadingTime: true,
           postsPerPage: 3,
           feedOptions: {
@@ -211,9 +211,9 @@ module.exports = {
           blogSidebarTitle: 'All our posts',
           editUrl: ({ locale, blogDirPath, blogPath }) => {
             if (locale !== 'en') {
-              return `https://crowdin.com/project/verdaccio/${locale}`;
+              return `https://crowdin.com/project/xamarincommunityguide/${locale}`;
             }
-            return `https://github.com/verdaccio/verdaccio/edit/master/website/${blogDirPath}/${blogPath}`;
+            return `https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io/edit/master/${blogDirPath}/${blogPath}`;
           },
         },
         theme: {
