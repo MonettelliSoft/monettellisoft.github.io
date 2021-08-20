@@ -3,36 +3,40 @@
 
 :root {
   --ifm-color-primary: var(--xamarincommunityguide-color);
-  --ifm-color-primary-dark: #44553a;
-  --ifm-color-primary-darker: #415036;
-  --ifm-color-primary-darkest: #35422d;
-  --ifm-color-primary-light: #546746;
-  --ifm-color-primary-lighter: #576c4a;
-  --ifm-color-primary-lightest: #637a53;
+  --ifm-color-primary-dark: #2e3f5f;
+  --ifm-color-primary-darker: #2f456d;
+  --ifm-color-primary-darkest: #363e4e;
+  --ifm-color-primary-light: #435068;
+  --ifm-color-primary-lighter: #54617a;
+  --ifm-color-primary-lightest:#55637c;
 
   /* custom palette */
   --dark-blue: #004074;
-  --grey: #f2f3f2;
+  // Light: Color de botones secundarios
+  --grey: #f3f2f2;
   --grey-darker: #b7b7b7;
   --grey-light: #f7f7f7;
+  // Light: Color de fondo menos de header
   --grey-lighter: #f9f9f9;
-  --xamarincommunityguide-color: #4a5e3e;
+  // Color del texto de titulos y texto seleccionado en la barra de navegación superior
+  --xamarincommunityguide-color: #163B7F;
   --twitter-color: #1595de;
   /*button color*/
   --red: #4d59fd;
-  --p-color: #5c5c5c;
+  // Color del texto de descripción
+  --p-color: #122d61;
   --font-size: 0.875rem;
   --font-size-big: calc(var(--font-size) * 1.2);
 }
 
 html[data-theme='dark']:root {
   --ifm-color-primary: var(--red);
-  --ifm-color-primary-dark: #b93a01;
-  --ifm-color-primary-darker: #ae3601;
-  --ifm-color-primary-darkest: #902d01;
-  --ifm-color-primary-light: #e24601;
-  --ifm-color-primary-lighter: #ec4a01;
-  --ifm-color-primary-lightest: #fe580e;
+  --ifm-color-primary-dark: #003cac;
+  --ifm-color-primary-darker: #0038a1;
+  --ifm-color-primary-darkest: #002f86;
+  --ifm-color-primary-light: #0048ce;
+  --ifm-color-primary-lighter: #004fe2;
+  --ifm-color-primary-lightest: #1869ff;
 
   // Color de navegacion superior
   --ifm-navbar-background-color: #17191A;
@@ -41,7 +45,8 @@ html[data-theme='dark']:root {
   --ifm-navbar-shadow: var(--ifm-global-shadow-lw);
 // Backgrouncolor principal
   --grey-lighter: #121414;
-  --p-color: #b7b7b7;
+  // Dark: Color de descripcion del texto
+  --p-color: #e8eaeb;
   --xamarincommunityguide-color: #fff;
   --grey: #f3f3f338;
 }

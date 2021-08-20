@@ -177,8 +177,8 @@ module.exports = {
       respectPrefersColorScheme: true,
     },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('prism-react-renderer/themes/nightOwl'),
+      theme: require('prism-react-renderer/themes/dracula'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
     },
   },
   presets: [
