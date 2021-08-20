@@ -19,7 +19,7 @@
   --xamarincommunityguide-color: #4a5e3e;
   --twitter-color: #1595de;
   /*button color*/
-  --red: #133B7F;
+  --red: #4d59fd;
   --p-color: #5c5c5c;
   --font-size: 0.875rem;
   --font-size-big: calc(var(--font-size) * 1.2);
@@ -34,12 +34,13 @@ html[data-theme='dark']:root {
   --ifm-color-primary-lighter: #ec4a01;
   --ifm-color-primary-lightest: #fe580e;
 
-  --ifm-navbar-background-color: #061a38;
-  --ifm-dropdown-background-color: #061a38;
+  // Color de navegacion superior
+  --ifm-navbar-background-color: #17191A;
+  --ifm-dropdown-background-color: #17191A;
   --ifm-global-shadow-lw: 0 1px 2px 0 rgba(255, 255, 255, 0.173);
   --ifm-navbar-shadow: var(--ifm-global-shadow-lw);
-
-  --grey-lighter: #041329;
+// Backgrouncolor principal
+  --grey-lighter: #121414;
   --p-color: #b7b7b7;
   --xamarincommunityguide-color: #fff;
   --grey: #f3f3f338;
@@ -99,9 +100,9 @@ html[data-theme='dark'] {
   .header-github-link:before {
     filter: invert(1);
   }
-
+// Barra de navegacion inferior
   .footer--dark {
-    --ifm-footer-background-color: #061a38;
+    --ifm-footer-background-color: #22272C;
   }
 
   .docusaurus-highlight-code-line {
