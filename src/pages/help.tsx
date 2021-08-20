@@ -81,18 +81,18 @@ const SUPPORT_LINKS = (lang: string) => [
     ),
   },
   {
-    title: 'GitHub',
+    title: 'GitHub Discussions',
     content: (
       <Translate
         values={{
           link: (
             <a href="https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io/discussions">
-              <Translate>Question Database</Translate>
+              <Translate>Discussions section</Translate>
             </a>
           ),
         }}
       >
-        {'If the documentation is not enough help, you can try browsing into our {link}'}
+        {'If the documentation is not helpful enough, you can try navigating our {link}'}
       </Translate>
     ),
   },
@@ -121,38 +121,6 @@ const SUPPORT_LINKS = (lang: string) => [
         }}
       >
         {'and also you can chat with the Xamarin Community Guide at {link}'}
-      </Translate>
-    ),
-  },
-  {
-    title: 'pnpm Chat',
-    content: (
-      <Translate
-        values={{
-          link: (
-            <a href="https://discord.gg/yk5MzThrV4">
-              <Translate>Community Chat</Translate>
-            </a>
-          ),
-        }}
-      >
-        {'If you have specific pnpm questions, join their community chat {link}'}
-      </Translate>
-    ),
-  },
-  {
-    title: 'Yarn Chat',
-    content: (
-      <Translate
-        values={{
-          link: (
-            <a href="https://discord.gg/yk5MzThrV4">
-              <Translate>Community Chat</Translate>
-            </a>
-          ),
-        }}
-      >
-        {'If you have specific yarn questions, join their community chat {link}'}
       </Translate>
     ),
   },

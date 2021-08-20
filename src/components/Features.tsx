@@ -7,35 +7,35 @@ import styles from './Features.module.scss';
 
 const FEATURES = [
   {
-    image: '/img/features/lock.svg',
+    image: '/img/features/harmonic_interfaces.svg',
     title: translate({ message: 'Harmonic interfaces' }),
     subtitle: translate({
       message:
-        'If you want to use all benefits of npm package system in your company without sending all the code to the public, and use your private packages just as easy as public ones.',
+        'The correct balance of your layouts and controls with the dimensions of the devices is one of the main problems we face, here you will find solutions that many Xamarin Developers had to face so that you do not make the same mistake.',
     }),
   },
   {
-    image: '/img/features/link.svg',
-    title: translate({ message: 'Easy maintenance.' }),
+    image: '/img/features/easy_maintenance.svg',
+    title: translate({ message: 'Easy maintenance' }),
     subtitle: translate({
       message:
-        'If you use multiple registries in your organization and need to fetch packages from multiple sources in one single project, you can chain multiple registries and fetch from one single endpoint.',
+        'Here you will find topics like Unit tests, UI tests, design skills, etc. that will help you improve the maintenance of your mobile applications.',
     }),
   },
   {
-    image: '/img/features/box.svg',
-    title: translate({ message: 'Beautiful applications.' }),
+    image: '/img/features/beautiful_applications.svg',
+    title: translate({ message: 'Beautiful applications' }),
     subtitle: translate({
       message:
-        'If you have more than one server which you want to install packages from, you might want to use this to decrease latency and provide limited failover.',
+        'Focus on the interaction that users have with your mobile applications so that they are useful, pleasant and accessible, in this guide you will learn to design in XAML, and balance styles applying UI/UX.',
     }),
   },
   {
-    image: '/img/features/override.svg',
+    image: '/img/features/scalability.svg',
     title: translate({ message: 'Always think scalability' }),
     subtitle: translate({
       message:
-        'If you want to use a modified version of some 3rd-party package, you can publish your version locally under the same name.',
+        'Using an architecture will determine if your software will be feasible to new changes, in Xamarin Community Guide Docs we care that you adopt the best architecture and go to new horizons.',
     }),
   },
 ];
