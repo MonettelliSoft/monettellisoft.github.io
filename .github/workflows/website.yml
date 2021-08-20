@@ -2,9 +2,11 @@ name: Xamarin Community Guide Website - CI/CD
 
 on:
   pull_request:
-    branches: master
+    branches: 
+      - master
   push:
-    branches: XamarinCommunityGuide-Core
+    branches: 
+      - XamarinCommunityGuide-Core
 
 jobs:
   checks:
