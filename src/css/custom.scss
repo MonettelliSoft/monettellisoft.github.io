@@ -19,7 +19,7 @@
   // Light: Color de fondo menos de header
   --grey-lighter: #f9f9f9;
   // Color del texto de titulos y texto seleccionado en la barra de navegación superior
-  --xamarincommunityguide-color: #163B7F;
+  --xamarincommunityguide-color: #2a4a85;
   --twitter-color: #1595de;
   /*button color*/
   --red: #4d59fd;
@@ -30,7 +30,7 @@
 }
 
 html[data-theme='dark']:root {
-  --ifm-color-primary: var(--red);
+  --ifm-color-primary: #7caaff;
   --ifm-color-primary-dark: #003cac;
   --ifm-color-primary-darker: #0038a1;
   --ifm-color-primary-darkest: #002f86;
@@ -47,7 +47,7 @@ html[data-theme='dark']:root {
   --grey-lighter: #121414;
   // Dark: Color de descripcion del texto
   --p-color: #e8eaeb;
-  --xamarincommunityguide-color: #fff;
+  --xamarincommunityguide-color: #d8d4ff;
   --grey: #f3f3f338;
 }
 
@@ -80,7 +80,7 @@ a:hover {
 
 ::selection {
   color: var(--ifm-color-white);
-  background: var(--xamarincommunityguide-color);
+  background: var(--dark-blue);
 }
 
 .main-wrapper {
@@ -107,7 +107,7 @@ html[data-theme='dark'] {
   }
 // Barra de navegacion inferior
   .footer--dark {
-    --ifm-footer-background-color: #22272C;
+    --ifm-footer-background-color: #191c1f;
   }
 
   .docusaurus-highlight-code-line {
