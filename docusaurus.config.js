@@ -28,7 +28,7 @@ const pkgJson = require('./package.json')
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Xamarin Community Guide',
-  tagline: 'Community guide to creating beautiful interfaces in Xamarin.Forms',
+  tagline: 'Community guide to creating beautiful applications in Xamarin',
   organizationName: 'MonettelliSoft',
   projectName: 'monettellisoft.github.io',
   url: 'https://monettellisoft.github.io',
@@ -53,7 +53,7 @@ module.exports = {
     }),
   },
   customFields: {
-    description: 'Community guide to creating beautiful interfaces in Xamarin.Forms'
+    description: 'Community guide to creating beautiful applications in Xamarin'
   },
   themeConfig: {
     announcementBar: {
@@ -202,7 +202,7 @@ module.exports = {
         },
         blog: {
           blogTitle: 'Xamarin Community Guide',
-          blogDescription: 'Community Guide to creating beautiful interfaces in Xamarin.Forms',
+          blogDescription: 'Community guide to creating beautiful applications in Xamarin',
           showReadingTime: true,
           postsPerPage: 3,
           feedOptions: {

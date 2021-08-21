@@ -17,7 +17,7 @@ const Header = (): React.ReactElement => {
         <div className={styles['header--mt-2']}>
           <h1 className={styles['header--title']}>Xamarin Community Guide</h1>
           <p className={styles['header--subtitle']}>
-            <Translate>Community guide to creating beautiful applications in Xamarin.Forms</Translate>
+            <Translate>Community guide to creating beautiful applications in Xamarin</Translate>
           </p>
           <div className={styles['header--links']}>
             <a href="https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io" className="link-secondary">
