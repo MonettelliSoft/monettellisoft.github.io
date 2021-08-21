@@ -120,7 +120,7 @@ const SUPPORT_LINKS = (lang: string) => [
           link: <a href="https://discord.gg/yk5MzThrV4">Discord</a>,
         }}
       >
-        {'and also you can chat with the Xamarin Community Guide at {link}'}
+        {'You can also chat with the Xamarin Community Guide on {link}'}
       </Translate>
     ),
   },

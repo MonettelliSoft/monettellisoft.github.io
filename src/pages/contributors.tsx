@@ -5,7 +5,10 @@ import Translate, { translate } from '@docusaurus/Translate';
 import styles from './contributors.module.scss';
 
 const Contributors = (): React.ReactElement => (
-  <Layout title="Contributors" description="Xamarin Community Guide contributors, thanks to you that this is a reality.">
+  <Layout
+    title="Contributors"
+    description="Xamarin Community Guide contributors, thanks to you that this is a reality."
+  >
     <div className={styles.wrapper}>
       <header>
         <h1>
@@ -13,11 +16,11 @@ const Contributors = (): React.ReactElement => (
         </h1>
         <p>
           <Translate>
-          Many thanks to everyone who contributes to Xamarin Community Guide, 
-          this project would not be a reality without you.
+            This project would not be a reality without the help of everyone who contributes to the Xamarin Community
+            Guide.
           </Translate>{' '}
           <b>
-            <Translate>Thanks</Translate>
+            <Translate>Thank you very much!</Translate>
           </b>
         </p>
       </header>

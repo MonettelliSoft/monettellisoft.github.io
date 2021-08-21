@@ -9,13 +9,14 @@ import styles from './WhatIsXamarinCommunityGuide.module.scss';
 const WhatIs = (): React.ReactElement => (
   <section className={styles.whatIs}>
     <h1 className={styles['whatIs--title']}>
-      <Translate values={{ xamarincommunityguide: <i>Xamarin Community Guide</i> }}>{'What is {xamarincommunityguide}?'}</Translate>
+      <Translate values={{ xamarincommunityguide: <i>Xamarin Community Guide</i> }}>
+        {'What is {xamarincommunityguide}?'}
+      </Translate>
     </h1>
     <p className={styles['whatIs--p']}>
       <Translate>
-        Xamarin Community Guide is an ambitious 
-        project whose purpose is to guide the creation 
-        of harmonious, easy-to-maintain and beautiful interfaces.
+        Xamarin Community Guide is an ambitious project whose purpose is to guide the creation of harmonious, beautiful
+        interfaces, easy to maintain and thinking about their scalability.
       </Translate>
     </p>
     <Link to={useBaseUrl('/docs/what-is-xamarin-community-guide')} className="link-primary">
