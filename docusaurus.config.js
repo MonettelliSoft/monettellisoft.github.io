@@ -161,7 +161,7 @@ module.exports = {
             {
               html: `
                 <a href="https://docusaurus.io" target="_blank" rel="noreferrer noopener" aria-label="Made with Docusaurus">
-                  <img src="img/Badges/docusaurus_badge.svg" alt="Made with Docusaurus" />
+                  <img src="/img/Badges/docusaurus_badge.svg" alt="Made with Docusaurus" />
                 </a>
               `,
             },
