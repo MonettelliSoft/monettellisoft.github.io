@@ -160,15 +160,15 @@ module.exports = {
             },
             {
               html: `
-                <a href="https://www.netlify.com" target="_blank" rel="noreferrer noopener" aria-label="Deploys by Netlify">
-                  <img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+                <a href="https://docusaurus.io" target="_blank" rel="noreferrer noopener" aria-label="Made with Docusaurus">
+                  <img src="img/Badges/docusaurus_badge.svg" alt="Made with Docusaurus" />
                 </a>
               `,
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Xamarin Community Guide. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Xamarin Community Guide`,
     },
     hideableSidebar: true,
     colorMode: {

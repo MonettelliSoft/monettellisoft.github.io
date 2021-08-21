@@ -8,22 +8,22 @@
   --ifm-color-primary-darkest: #363e4e;
   --ifm-color-primary-light: #435068;
   --ifm-color-primary-lighter: #54617a;
-  --ifm-color-primary-lightest:#55637c;
+  --ifm-color-primary-lightest: #55637c;
 
   /* custom palette */
   --dark-blue: #004074;
-  // Light: Color de botones secundarios
+  // Light: Secondary Button Color
   --grey: #f3f2f2;
   --grey-darker: #b7b7b7;
   --grey-light: #f7f7f7;
-  // Light: Color de fondo menos de header
+  // Light: Background color less than header
   --grey-lighter: #f9f9f9;
-  // Color del texto de titulos y texto seleccionado en la barra de navegación superior
+  // Title text color and selected text in the top navigation bar
   --xamarincommunityguide-color: #2a4a85;
   --twitter-color: #1595de;
   /*button color*/
   --red: #4d59fd;
-  // Color del texto de descripción
+  // Color of the description text
   --p-color: #122d61;
   --font-size: 0.875rem;
   --font-size-big: calc(var(--font-size) * 1.2);
@@ -38,14 +38,14 @@ html[data-theme='dark']:root {
   --ifm-color-primary-lighter: #004fe2;
   --ifm-color-primary-lightest: #1869ff;
 
-  // Color de navegacion superior
-  --ifm-navbar-background-color: #17191A;
-  --ifm-dropdown-background-color: #17191A;
+  // Top navigation color
+  --ifm-navbar-background-color: #17191a;
+  --ifm-dropdown-background-color: #17191a;
   --ifm-global-shadow-lw: 0 1px 2px 0 rgba(255, 255, 255, 0.173);
   --ifm-navbar-shadow: var(--ifm-global-shadow-lw);
-// Backgrouncolor principal
+  // Backgroundcolor main
   --grey-lighter: #121414;
-  // Dark: Color de descripcion del texto
+  // Dark: Text description color
   --p-color: #e8eaeb;
   --xamarincommunityguide-color: #d8d4ff;
   --grey: #f3f3f338;
@@ -105,7 +105,7 @@ html[data-theme='dark'] {
   .header-github-link:before {
     filter: invert(1);
   }
-// Barra de navegacion inferior
+  // Lower navigation bar
   .footer--dark {
     --ifm-footer-background-color: #191c1f;
   }
