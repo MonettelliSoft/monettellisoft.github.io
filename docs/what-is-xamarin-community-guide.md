@@ -1,6 +1,7 @@
 ---
 id: what-is-xamarin-community-guide
 title: "What is Xamarin Community Guide?"
+tags: [UI, UX, Xamarin.Forms]
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
