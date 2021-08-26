@@ -6,7 +6,10 @@ If you are submitting a new post, please read and check the boxes below.
 
 :technologist: **Author Url**: <!-- example: https://github.com/name -->
 
-:earth_americas: **Idiom**: Spanish [ ], English [ ].
+:earth_americas: **Idiom**:
+
+- [ ] Spanish.
+- [ ] English.
 
 By submitting this pull request to add my post, I verify that I adhere to the **Xamarin Community Guide** guidelines (check each item that applies):
 
