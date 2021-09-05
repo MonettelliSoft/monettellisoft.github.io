@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkxamarin_community_guide=self.webpackChunkxamarin_community_guide||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"All our posts","items":[{"title":"The new perspective of the Developer","permalink":"/blog/the-new-perspective-of-the-developer"},{"title":"Welcome","permalink":"/blog/welcome"}]}')}}]);
