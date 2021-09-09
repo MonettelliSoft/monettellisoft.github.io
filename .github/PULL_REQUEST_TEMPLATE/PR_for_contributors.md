@@ -13,7 +13,8 @@ If you are submitting a new post, please read and check the boxes below.
 
 By submitting this pull request to add my post, I verify that I adhere to the **Xamarin Community Guide** guidelines (check each item that applies):
 
-- [ ] The post is a **markdown file** and is located in the **blog folder**.
+- [ ] I have implemented the required data in **authors.yml**.
+- [ ] The post is a **mdx file** and is located in the **blog folder**.
 - [ ] I host **NO malicious or offensive content** on my post (including photos, swearing, etc.).
 - [ ] I understand, that if I want to add local images they have to be located in **static\img\blog** and add a folder with the name of the publication, in lowercase and separated with an underscore **_(example: publication_name)_**.
 - [ ] I understand, that if I intend to **remove my post**, it will be **excluded from the Xamarin Community Guide**.
