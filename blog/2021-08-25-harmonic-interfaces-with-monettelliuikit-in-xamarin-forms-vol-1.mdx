@@ -1,23 +1,21 @@
 ---
 slug: harmonic-interfaces-with-monettelliuikit-in-xamarin-forms-vol-1
 title: Harmonic Interfaces with MonettelliUIKIT in Xamarin.Forms Vol 1
-author: Daniel Angel Monettelli L.
-author_title: Co-Founder Xamarin Community Guide
-author_url: https://github.com/danielmonettelli
-author_image_url: https://avatars.githubusercontent.com/u/14121125?v=4
-tags: [Xamarin.Forms, UIKIT, XAML]
+authors: [danielmonettelli]
+tags: [Xamarin.Forms, MonettelliUIKIT, XAML]
 ---
 
-import Fancybox from '/src/fancybox.js';
-
-<Fancybox>
+```mdx-code-block
+import ImageZoom from '/src/components/imageZoom/fancybox.js';
+```
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_interfaces_with_monettelliuikit.png"
     data-fancybox
     data-caption="Harmonic Interfaces with MonettelliUIKIT in Xamarin.Forms Vol 1">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_interfaces_with_monettelliuikit.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 
 <p style={{ fontSize: '20px', margin: '12px 0px 20px', fontWeight: 'bold', fontStyle: 'italic' }}>
 When creating interfaces in Xamarin.Forms, most developers (and myself included) use
@@ -36,14 +34,14 @@ Harmonic Interfaces is the balance of a group of controls with the dimensions of
 
 **Xamarin.Forms** and its powerful **Hot Reload**, allow you to visualize in real time the process of the interfaces in XAML and C #, with this great tool, I did my practices to perfect my interfaces, and to present my results in this publication.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_interface_in_action.png"
     data-fancybox
     data-caption="Harmonic Interface in action">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_interface_in_action.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 Harmonic Interface in action
@@ -53,14 +51,14 @@ Harmonic Interface in action
 
 Xamarin.Forms has different layouts, each with a purpose, of all of them, the one indicated for me is [GridLayout](https://askxammy.com/working-with-gridlayout-in-xamarin-forms/), because with **RowDefinitions** and **ColumnDefinitions** I can cleanly manage my controls, however what stands out is proportional mode, and that is where we will focus on this post.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/gridlayout_structure.png"
     data-fancybox
     data-caption="GridLayout Structure">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/gridlayout_structure.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 GridLayout Structure
@@ -70,14 +68,14 @@ GridLayout Structure
 
 The **proportional mode** is in relation to the dimensions of the device and the content involved in the interface, that is, if a certain row and/or column proportion is added to a control, it is adapted to each device.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_proportions_in_action.png"
     data-fancybox
     data-caption="Harmonic proportions in action">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_proportions_in_action.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 Harmonic proportions in action
@@ -87,29 +85,29 @@ Harmonic proportions in action
 
 For this, it is necessary to use a design tool**_(in my case Adobe XD)_**, adding semi-transparent blocks of different colors**_(both for rows and columns)_** to all the spaces of your design, in order to cover the positions that the controls, remember that each design has its difficulty.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/using_proportions_in_adobe_xd.png"
     data-fancybox
     data-caption="Using proportions in Adobe XD">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/using_proportions_in_adobe_xd.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 Using proportions in Adobe XD
 </p>
 
-The [Ing. Juan Carlos Ricalde Poveda](https://github.com/jucaripo)**_(UI/UX Expert)_**, recommends that the artboard(Adobe XD or another tool) be done with the smallest screen size(preferably Android Phones), this helps extend and not reduce the space taken up by the controls.
+The [Ing. Juan Carlos Ricalde Poveda](https://github.com/jucaripo) **_(UI/UX Expert)_**, recommends that the artboard(Adobe XD or another tool) be done with the smallest screen size(preferably Android Phones), this helps extend and not reduce the space taken up by the controls.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/device_sizes_use_case.png"
     data-fancybox
     data-caption="Device sizes use case">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/device_sizes_use_case.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 Device sizes use case
@@ -117,14 +115,14 @@ Device sizes use case
 
 In the **"Prototype"** section, we create the flow of the designs(if there are two or more interfaces).
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/adobe_xd_prototype_section.png"
     data-fancybox
     data-caption="Adobe XD 'Prototype' section">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/adobe_xd_prototype_section.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 Adobe XD 'Prototype' section
@@ -138,27 +136,27 @@ To have a harmonic ratio, divide the row and/or column distance of a control by 
 
 :::
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/adobe_xd_share_section.png"
     data-fancybox
     data-caption="Adobe XD 'Share' section">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/adobe_xd_share_section.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 Adobe XD 'Share' section
 </p>
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/calculation_of_proportions_in_the_link_made_for_adobe_xd.png"
     data-fancybox
     data-caption="Calculation of proportions in the link made for Adobe XD">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/calculation_of_proportions_in_the_link_made_for_adobe_xd.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 Calculation of proportions in the link made for Adobe XD
@@ -234,14 +232,14 @@ Some controls will necessarily use **_"Auto"_** since their dimensions do not ha
 
 [MonettelliUIKIT](https://marketplace.visualstudio.com/items?itemName=DanielMonettelli.monettelli-forms-templates) implements the Clean UI Style Architecture, which reduces the time of developing beautiful interfaces and maintaining them, then I explain the process step by step.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/monettelliuikit.png"
     data-fancybox
     data-caption="MonettelliUIKIT">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/monettelliuikit.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 MonettelliUIKIT
@@ -286,14 +284,14 @@ On the other hand, **SVG's are already embedded**, thanks to the Nuget package c
 
 In the following image we can see the flow of the **MVVM Pattern**.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/MVVM_Pattern.png"
     data-fancybox
     data-caption="MVVM Pattern by Gill Cleeren">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/MVVM_Pattern.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 MVVM Pattern by Gill Cleeren
@@ -639,14 +637,14 @@ public partial class ExercisePage : ContentPage
 
 Now that you have a clear vision of what interface harmony is all about, let's apply what we have learned in the following design.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/exercise_app_concept.png"
     data-fancybox
     data-caption="Exercise App Concept by Shahidul Islam Shishir">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/exercise_app_concept.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 Exercise App Concept by Shahidul Islam Shishir
@@ -654,14 +652,14 @@ Exercise App Concept by Shahidul Islam Shishir
 
 Making a feedback, we analyze the design(s) in Adobe XD, we add multi-colored blocks to the rows and columns, we prototype and create the link that will help to see the distances of these blocks, and then calculate the proportions of each design.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_proportions_in_the_concept_of_exercise_application.png"
     data-fancybox
     data-caption="'Harmonic Proportions' in the Concept of Exercise Application">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_proportions_in_the_concept_of_exercise_application.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 'Harmonic Proportions' in the Concept of Exercise Application
@@ -698,14 +696,14 @@ Using the **GridLayout**, we complement these proportions in **Row(Colum)Definit
 
 If you have applied each step, the result will be similar to this one.
 
-<Fancybox>
+<ImageZoom>
   <a
     href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmony_of_interfaces_made_in_xamarin_forms.png"
     data-fancybox
     data-caption="Harmony of interfaces made in Xamarin.Forms">
     <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmony_of_interfaces_made_in_xamarin_forms.png" />
   </a>
-</Fancybox>
+</ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', 
 margin: '6px 0px 20px', fontWeight: 'bold' }}>
 Harmony of interfaces made in Xamarin.Forms

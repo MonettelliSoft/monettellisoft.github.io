@@ -1,34 +1,53 @@
 ---
-slug: post-template 
-title: Post Template 
-author: Daniel Angel Monettelli L.
-author_title: Co-Founder Xamarin Community Guide
-author_url: https://github.com/danielmonettelli
-author_image_url: https://avatars.githubusercontent.com/u/14121125?v=4
-tags: [UI, UX, Xamarin.Forms]
+slug: post-template
+title: Post Template
+authors: [danielmonettelli]
+tags: [Post-Template]
 ---
+
+```mdx-code-block
+import ImageZoom from '/src/components/imageZoom/fancybox.js';
+import ReactPlayer from 'react-player';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import BrowserWindow from '/src/components/BrowserWindow';
+import TOCInline from '@theme/TOCInline';
+```
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
 
-## Markdown Syntax
-
-To serve as an example page when styling markdown based Docusaurus sites.
-
 <!--truncate-->
+
+## MDX Syntax
+
+Here you can see most of the components ready for your publications.
+
+---
+
+## Full table of contents
+
+```mdx-code-block
+<BrowserWindow>
+
+<TOCInline toc={toc} />
+
+</BrowserWindow>
+```
+---
 
 ## Headers
 
-# H1 - Create the best documentation
+# H1 - Create the best post
 
-## H2 - Create the best documentation
+## H2 - Create the best post
 
-### H3 - Create the best documentation
+### H3 - Create the best post
 
-#### H4 - Create the best documentation
+#### H4 - Create the best post
 
-##### H5 - Create the best documentation
+##### H5 - Create the best post
 
-###### H6 - Create the best documentation
+###### H6 - Create the best post
 
 ---
 
@@ -97,16 +116,53 @@ Reference-style: ![alt text][logo]
 
 Images from any folder can be used by providing path to file. Path should be relative to the original markdown file or absolute to the `/static` folder.
 
+<ImageZoom>
+  <a
+    href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_interfaces_with_monettelliuikit.png"
+    data-fancybox
+    data-caption="Harmonic Interfaces with MonettelliUIKIT in Xamarin.Forms Vol 1">
+    <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_interfaces_with_monettelliuikit.png" />
+  </a>
+</ImageZoom>
+<p style={{ textAlign: 'center', fontSize: '.8rem', margin: '6px 0px 20px', fontWeight: 'bold' }}>
+  Harmonic Interface in action
+</p>
+
+---
+
+## Videos
+
+<ReactPlayer url="https://www.youtube.com/watch?v=z4LiPa8ixyQ" controls={true} />
+<p style={{ textAlign: 'center', fontSize: '.8rem', margin: '12px 0px 20px', fontWeight: 'bold' }}>
+  Building Beautiful Apps with Xamarin.Forms
+</p>
+
 ---
 
 ## Code
 
-```javascript
-var s = 'JavaScript syntax highlighting';
-alert(s);
+```cs
+public class AudioBookViewModel : MyBaseViewModel
+{
+    private readonly INavigationService _navigationService;
+    private readonly IBookDataService _bookDataService;
+    private readonly ICategoryDataService _categoryDataService;
+
+    public ObservableRangeCollection<Book> Books { get; }
+    public ObservableRangeCollection<Category> Categories { get; }
+
+    public AudioBookViewModel
+        (INavigationService navigationService,
+        IBookDataService bookDataService,
+        ICategoryDataService categoryDataService)
+    {
+        // ....
+    }
+
+}
 ```
 
-```python
+```xml
 s = "Python syntax highlighting"
 print(s)
 ```
@@ -143,6 +199,136 @@ There must be at least 3 dashes separating each header cell. The outer pipes (|)
 
 ---
 
+## Tabs
+
+### Tabs not synced
+
+```mdx-code-block
+<BrowserWindow>
+  <Tabs
+    defaultValue="apple"
+    values={[
+      {label: 'Apple', value: 'apple'},
+      {label: 'Orange', value: 'orange'},
+      {label: 'Banana', value: 'banana'},
+    ]}>
+    <TabItem value="apple">This is an apple 🍎</TabItem>
+    <TabItem value="orange">This is an orange 🍊</TabItem>
+    <TabItem value="banana">This is a banana 🍌</TabItem>
+  </Tabs>
+</BrowserWindow>
+<br/>
+```
+
+### Tab expander with code highlighting
+
+<details>
+  <summary><code>Tabs</code> props take precedence over the <code>TabItem</code> props:</summary>
+
+```jsx
+<Tabs
+  defaultValue="apple"
+  values={[
+    { label: 'Apple 1', value: 'apple' },
+    { label: 'Orange 1', value: 'orange' },
+    { label: 'Banana 1', value: 'banana' },
+  ]}
+>
+  <TabItem value="apple" label="Apple 2">
+    This is an apple 🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange 2">
+    This is an orange 🍊
+  </TabItem>
+  <TabItem value="banana" label="Banana 2" default>
+    This is a banana 🍌
+  </TabItem>
+</Tabs>
+```
+
+```mdx-code-block
+<BrowserWindow>
+  <Tabs
+    defaultValue="apple"
+    values={[
+      {label: 'Apple 1', value: 'apple'},
+      {label: 'Orange 1', value: 'orange'},
+      {label: 'Banana 1', value: 'banana'},
+    ]}>
+    <TabItem value="apple" label="Apple 2">This is an apple 🍎</TabItem>
+    <TabItem value="orange" label="Orange 2">This is an orange 🍊</TabItem>
+    <TabItem value="banana" label="Banana 2">This is a banana 🍌</TabItem>
+  </Tabs>
+</BrowserWindow>
+<br/>
+```
+
+</details>
+
+### Syncing tab choices
+
+```mdx-code-block
+<BrowserWindow>
+  <Tabs groupId="operating-systems">
+    <TabItem value="win" label="Windows" default>Use Ctrl + C to copy.</TabItem>
+    <TabItem value="mac" label="MacOS">Use Command + C to copy.</TabItem>
+  </Tabs>
+
+  <Tabs groupId="operating-systems">
+    <TabItem value="win" label="Windows" default>Use Ctrl + V to paste.</TabItem>
+    <TabItem value="mac" label="MacOS">Use Command + V to paste.</TabItem>
+  </Tabs>
+</BrowserWindow>
+<br/>
+```
+
+### Synchronizing with other tabs
+
+```mdx-code-block
+<BrowserWindow>
+  <Tabs groupId="operating-systems">
+    <TabItem value="win" label="Windows" default>I am Windows.</TabItem>
+    <TabItem value="mac" label="MacOS">I am macOS.</TabItem>
+    <TabItem value="linux" label="Linux">I am Linux.</TabItem>
+  </Tabs>
+</BrowserWindow>
+```
+
+### Tab group sequence not synced
+
+```mdx-code-block
+<BrowserWindow>
+  <Tabs groupId="operating-systems">
+    <TabItem value="win" label="Windows" default>Windows in windows.</TabItem>
+    <TabItem value="mac" label="MacOS">macOS is macOS.</TabItem>
+  </Tabs>
+
+  <Tabs groupId="non-mac-operating-systems">
+    <TabItem value="win" label="Windows" default>Windows is windows.</TabItem>
+    <TabItem value="unix" label="Unix">Unix is unix.</TabItem>
+  </Tabs>
+</BrowserWindow>
+```
+### Tabs in admonitions
+
+:::tip Use tabs in admonitions
+
+<Tabs
+  defaultValue="apple"
+  values={[
+    {label: 'Apple', value: 'apple'},
+    {label: 'Orange', value: 'orange'},
+    {label: 'Banana', value: 'banana'},
+  ]}>
+  <TabItem value="apple">This is an apple 🍎</TabItem>
+  <TabItem value="orange">This is an orange 🍊</TabItem>
+  <TabItem value="banana">This is a banana 🍌</TabItem>
+</Tabs>
+
+:::
+
+---
+
 ## Blockquotes
 
 > Blockquotes are very handy in email to emulate reply text. This line is part of the same quote.
@@ -167,7 +353,9 @@ Quote break.
 
 ## Line Breaks
 
-Here's a line for us to start with.
+<p style={{ fontSize: '20px', margin: '12px 0px 20px', fontWeight: 'bold', fontStyle: 'italic' }}>
+  This line is to briefly describe the content of the post.
+</p>
 
 This line is separated from the one above by two newlines, so it will be a _separate paragraph_.
 
