@@ -10,7 +10,7 @@ import ImageZoom from '/src/components/imageZoom/fancybox.js';
 import ReactPlayer from 'react-player';
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
-import BrowserWindow from '/src/components/BrowserWindow';
+import BrowserWindow from '/src/components/BrowserWindow/browserWindow.tsx';
 import TOCInline from '@theme/TOCInline';
 ```
 
@@ -118,14 +118,14 @@ Images from any folder can be used by providing path to file. Path should be rel
 
 <ImageZoom>
   <a
-    href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_interfaces_with_monettelliuikit.png"
+    href="https://raw.githubusercontent.com/xamarin/Xamarin.Forms/5.0.0/Assets/banner.png"
     data-fancybox
     data-caption="Harmonic Interfaces with MonettelliUIKIT in Xamarin.Forms Vol 1">
-    <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/harmonic_interfaces_with_monettelliuikit.png" />
+    <img src="https://raw.githubusercontent.com/xamarin/Xamarin.Forms/5.0.0/Assets/banner.png" />
   </a>
 </ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', margin: '6px 0px 20px', fontWeight: 'bold' }}>
-  Harmonic Interface in action
+  Zoom image
 </p>
 
 ---
@@ -163,19 +163,33 @@ public class AudioBookViewModel : MyBaseViewModel
 ```
 
 ```xml
-s = "Python syntax highlighting"
-print(s)
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridTutorial.MainPage">
+    <Grid Margin="20,35,20,20">
+        <Label Text="By default, a Grid contains one row and one column." />
+    </Grid>
+</ContentPage>
 ```
 
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a <b>tag</b>.
-```
-
-```js {2}
-function highlightMe() {
-  console.log('This line can be highlighted!');
-}
+```xml {6,10}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GridDemos.Views.BasicGridPage"
+             Title="Basic Grid demo">
+   <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        ...
+    </Grid>
+</ContentPage>
 ```
 
 ---
