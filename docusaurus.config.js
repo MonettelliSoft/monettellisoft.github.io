@@ -204,9 +204,10 @@ module.exports = {
           blogTitle: 'Blog',
           blogDescription: 'Community guide to creating beautiful applications in Xamarin',
           showReadingTime: true,
-          postsPerPage: 3,
+          postsPerPage: 5,
           feedOptions: {
             type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Xamarin Community Guide`,
           },
           blogSidebarCount: 'ALL',
           blogSidebarTitle: 'All our posts',
