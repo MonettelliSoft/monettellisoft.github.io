@@ -132,9 +132,34 @@ Images from any folder can be used by providing path to file. Path should be rel
 
 ## Videos
 
+### Using HTTPS
+
 <ReactPlayer url="https://www.youtube.com/watch?v=z4LiPa8ixyQ" controls={true} />
 <p style={{ textAlign: 'center', fontSize: '.8rem', margin: '12px 0px 20px', fontWeight: 'bold' }}>
   Building Beautiful Apps with Xamarin.Forms
+</p>
+
+### By direct local route with subtitles
+
+<video width="99%" controls={true}>
+<source src="/videos/post_template/one_dev_minute_what_is_devops.mp4" type="video/mp4" />
+<track
+    kind="subtitles"
+    label="Spanish"
+    src="/videos/post_template/one_dev_minute_what_is_devops_es.vtt"
+    srcLang="es"
+    default={true}
+/>
+<track
+    kind="subtitles"
+    label="English"
+    src="/videos/post_template/one_dev_minute_what_is_devops_en.vtt"
+    srcLang="en"
+    default={false}
+/>
+</video>
+<p style={{ textAlign: 'center', fontSize: '.8rem', margin: '6px 0px 20px', fontWeight: 'bold' }}>
+  What is DevOps? | One Dev Question
 </p>
 
 ---
