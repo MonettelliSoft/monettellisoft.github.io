@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkxamarin_community_guide=self.webpackChunkxamarin_community_guide||[]).push([[133],{5857:function(e){e.exports=JSON.parse('{"name":"Team rules","permalink":"/docs/tags/team-rules","docs":[{"id":"team-rules","title":"Team rules","description":"sksksk","permalink":"/docs/team-rules"}],"allTagsPath":"/docs/tags"}')}}]);

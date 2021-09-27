@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkxamarin_community_guide=self.webpackChunkxamarin_community_guide||[]).push([[250],{5891:function(a){a.exports=JSON.parse('{"name":"FAQs","permalink":"/docs/tags/fa-qs","docs":[{"id":"faq","title":"FAQs","description":"","permalink":"/docs/faq"}],"allTagsPath":"/docs/tags"}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkxamarin_community_guide=self.webpackChunkxamarin_community_guide||[]).push([[121],{8070:function(a){a.exports=JSON.parse('[{"name":"UI","permalink":"/docs/tags/ui","count":1},{"name":"UX","permalink":"/docs/tags/ux","count":1},{"name":"Xamarin.Forms","permalink":"/docs/tags/xamarin-forms","count":1}]')}}]);
