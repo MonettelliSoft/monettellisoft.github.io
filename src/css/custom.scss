@@ -49,6 +49,9 @@ html[data-theme='dark']:root {
   --p-color: #e8eaeb;
   --xamarincommunityguide-color: #d8d4ff;
   --grey: #f3f3f338;
+
+
+  --custom-shadow-xl: 0 30px 60px 0 rgba(0, 0, 0, 0.1);
 }
 
 div[role='banner'] {
@@ -121,4 +124,44 @@ html[data-theme='dark'] {
 
 .markdown iframe {
   width: 100%;
+}
+
+
+
+// Test
+a.card {
+  text-decoration: none !important;
+  color: var(--dark-blue);
+  box-shadow: none;
+  border: 1px solid #333;
+  display: flex;
+  /* background-color: var(--ifm-background-color); */
+}
+
+
+a.card .card__body {
+  flex: 1;
+  flex-grow: 1;
+}
+
+
+// Card style
+a.card:hover {
+  transition: all 0.2s ease;
+  border: 2px solid var(--red);
+  box-shadow:var(--custom-shadow-xl), 0 0 0 1px var(--ifm-color-primary-darkest) !important;
+}
+
+a.hash-link {
+  text-decoration: none;
+  font-style: none;
+  color: rebeccapurple;
+}
+
+// Margin in items
+@media screen and (min-width: 996px) {
+  .row.is-multiline .col {
+    margin-top: var(--ifm-spacing-horizontal) !important;
+    margin-bottom: var(--ifm-spacing-horizontal) !important;
+  }
 }

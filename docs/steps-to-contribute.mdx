@@ -1,0 +1,253 @@
+---
+id: steps-to-contribute
+title: 'Steps to contribute'
+tags: [Steps to contribute]
+---
+
+import Link from '@docusaurus/Link';
+import ImageZoom from '/src/components/imageZoom/fancybox.js';
+import ReactPlayer from 'react-player';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import BrowserWindow from '/src/components/BrowserWindow/browserWindow.tsx';
+import TOCInline from '@theme/TOCInline';
+
+Do you like Xamarin Community Guide and want to help improve it? Brilliant! We are working
+to make this process as easy and transparent as possible. It is possible that
+we're not there yet, but this guide will help you grow as a contributor and
+will provide everything you need to make your first contribution. If any are missing
+information that prevents you from submitting a pull request, please let us know.
+We treat these types of issues as real mistakes.
+
+:::important
+
+Everyone who participates in this project, either as a team or a contributor,
+is obliged to follow the projects
+[Contributor code of conduct](/docs/contributor-code-of-conduct).
+Every violation against it will be reviewed and investigated and will result in a response
+that is deemed necessary and appropriate to the circumstances. The project team is obligated
+to maintain confidentiality with regard to the reporter of an incident. Further details of
+specific enforcement policies may be posted separately.
+
+:::
+
+## How to contribute
+
+Xamarin Community Guide offers a variety of ways to contribute. If you struggle to find something suitable
+for yourself, join the [discord channel](https://discord.com/invite/yk5MzThrV4) and communicate with the team. Don't be shy, they are
+there to help you!
+
+You can participate by:
+
+- [Creating publications to the `Community Blog` section](steps-to-contribute#creating-publications-to-the-community-blog-section).
+- Improving documentation.
+- Placing a `star` in the repository.
+- Help out in the [Discord Channel](https://discord.com/invite/yk5MzThrV4) support channel.
+- Spread the good news about the project on twitter using the hashtag `#XamarinCommunityGuide` and `Xamarin`.
+- Contributing to the source code.
+- Be part of the Xamarin `Community Guide Team`.
+- Contributing ideas in [GitHub Discussions](https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io/discussions).
+
+### Creating publications to the `Community Blog` section
+
+We consider this contribution the most important because it allows us to structure
+the content of the documentation. Xamarin Community Guide fosters the collaborative
+spirit within you.
+
+:::important
+
+- You must have a [`GitHub`](https://github.com/) account.
+- Install the code editor of your choice ([`VS Code`](https://code.visualstudio.com/),
+  [`Vim`](https://www.vim.org/),
+  [`Webstorm`](https://www.jetbrains.com/es-es/webstorm/),
+  [`Atom`](https://atom.io/), etc ...)
+- Install [`Node.js`](https://nodejs.org/en/download/) version >= 12.13.0 or above (which can be checked by running `node -v`).
+  You can use nvm for managing multiple Node versions on a single machine installed
+- Install [`Yarn`](https://classic.yarnpkg.com/en/) version >= 1.5 (which can be checked by running `yarn --version`).
+  Yarn is a performant package manager for JavaScript and replaces the npm client. It is not strictly necessary but highly encouraged.
+
+:::
+
+The following instructions will help you create a publication and send its PR
+for its respective review, remember to follow it step by step, be very patient.
+
+1. **Click on the GitHub icon.**
+2. **In the repository, give it a star (to motivate the team), then fork to your
+   GitHub account.**
+3. **Clone the repository.**
+
+:::note
+
+To make changes and preserve git history, you must clone the repository on your local
+development machine.
+
+:::
+
+In the following command, change YOUR-USERNAME to your GitHub profile.
+
+```powershell
+git clone https://github.com/YOUR-USERNAME/xamarincommunityguide.github.io.git
+```
+
+The following command, directs you to the repository copy.
+
+```powershell
+cd xamarincommunityguide.github.io
+```
+
+:::important
+
+Make sure you are in the `XamarinCommunityGuide-Core` branch using the `git branch` command.
+
+:::
+
+4. **Install the dependencies.**
+
+Xamarin Community Guide requires certain dependencies to work, don't worry!
+All these dependencies are handled by the _Yarn package manager_, so you only need to run
+one command
+
+```powershell
+yarn install
+```
+
+:::caution
+
+Computers using ARM architecture (for example: Mac with M1) may have problems installing
+dependencies, this is because the sass-style preprocessor is not fully adapted for that type
+of architecture yet.
+
+:::
+
+5. **Run the project.**
+
+Yarn provides a command to start a server and restart the site as soon as you
+make any changes to the project source code, you can access the site from your browser
+by visiting the URL **_http://localhost:3000/_** (default).
+
+:::note
+
+To make the changes, use your favorite code editor, preferably **Visual Studio Code**.
+
+:::
+
+```powershell
+yarn start
+```
+
+6. **In the blog folder, in the author.yml file, add your public data as a contributor.**
+
+```powershell {4}
+xamarincommunityguide.github.io
+├── blog
+│   ├── ...
+│   └── authors.yml
+└── ...
+```
+
+```yml
+nickname:
+  name: your-public-name
+  title: honorary-title-of-collaborator
+  url: public-url-of-github-or-twitter-account
+  image_url: public-image-of-your-github-or-twitter-account
+
+danielmonettelli:
+  name: Daniel Angel Monettelli L.
+  title: Founder of Xamarin Community Guide
+  url: https://github.com/danielmonettelli
+  image_url: https://github.com/danielmonettelli.png
+```
+
+:::important
+
+In the title: `honorary-title-of-collaborator` you must add this:
+
+- If you are a contributor: `Xamarin Community Guide Contributor`.
+- If you are from the team: `Xamarin Community Guide Team`.
+
+:::
+
+:::warning
+
+To avoid authorship conflicts in publications, do not duplicate
+or copy someone else's `nickname`.
+
+:::
+
+7. **In the blog folder, create an MDX file, and add the date and name
+   of your post separated by hyphens and in lower case.**
+
+```powershell {3,4}
+xamarincommunityguide.github.io
+├── blog
+│   ├── 2021-08-05-my-first-post.mdx
+│   ├── 2021-09-22-my-second-post.mdx
+│   └── ...
+└── ...
+```
+
+8. **At the top of your publication, add the front matter block,
+   followed by the imported components.**
+
+```md
+---
+slug: my-first-post
+title: My first post
+authors: [nickname]
+tags: [Tag1, Tag2, Tag3]
+---
+
+import Link from '@docusaurus/Link';
+import ImageZoom from '/src/components/imageZoom/fancybox.js';
+import ReactPlayer from 'react-player';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import BrowserWindow from '/src/components/BrowserWindow/browserWindow.tsx';
+import TOCInline from '@theme/TOCInline';
+```
+
+:::caution
+
+- For better navigation, the description of the `slug` has to be identical
+  to the file of its publication.
+- Make sure to add your created `nickname` in the `authors` description.
+- In the `tags`, in addition to those that represent your publication,
+  add if it is in `Spanish` or `English`.
+
+:::
+
+9. **Main structure of the publication.**
+
+Xamarin Community Guide made two posts:
+
+- The Post Template: It is a group of components that you can use to enrich
+  your publication.
+
+- My first post: It is a concept of how your post should be.
+
+10. **Submit your pull request.**
+
+<Tabs groupId="send-pr">
+<TabItem value="gitkraken" label="GitKraken">
+
+- [Download and install GitKraken Git GUI](https://support.gitkraken.com/how-to-install/).
+- [Integrate with GitHub](https://support.gitkraken.com/integrations/github/).
+- Go to the project repository.
+- Right click, and select **Open with GitKraken**.
+- Click on **Stage all changes**.
+- In the **Commit Message**, the **Summary** structure should be as follows:
+
+```powershell
+Publication: My title of the publication
+```
+
+- Pull request flow:
+
+</TabItem>
+</Tabs>
+<br />
+
+Done, if you did all the steps correctly and the Xamarin Community Guide Team
+accepted your post, you will be on our [honor page as a contributor](/contributors),
+that's how much we appreciate it.

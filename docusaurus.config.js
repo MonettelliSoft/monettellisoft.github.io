@@ -1,29 +1,50 @@
 // @ts-check
 
-const isDeployPreview = process.env.CONTEXT === "deploy-preview";
-const isProductionDeployment = process.env.CONTEXT === "production";
+const isDeployPreview = process.env.CONTEXT === 'deploy-preview';
+const isProductionDeployment = process.env.CONTEXT === 'production';
 
-const localesWithLowRatioOfTranslation = ["ar-SA", "fil-PH", "gl-ES", "hi-IN", "ja-JP", "ko-KR", "pt-PT", "sr-SP", "tg-TJ", "ro-RO", "zh-CN"];
+const localesWithLowRatioOfTranslation = [
+  'ar-SA',
+  'fil-PH',
+  'gl-ES',
+  'hi-IN',
+  'ja-JP',
+  'ko-KR',
+  'pt-PT',
+  'sr-SP',
+  'tg-TJ',
+  'ro-RO',
+  'zh-CN',
+];
 /** @type {import('@docusaurus/types').DocusaurusConfig['i18n']} */
 const i18nConfig = {
   defaultLocale: 'en',
-  locales: isDeployPreview ? ['en'] : [
-    "en", "cs-CZ", "de-DE",
-    "es-ES", "fr-FR",
-    "it-IT", "pl-PL",
-    "pt-BR", "ru-RU",
-    "sr-CS", "vi-VN",
-    "yo-NG", "zh-TW",
-    "zh-CN"
-  ],
+  locales: isDeployPreview
+    ? ['en']
+    : [
+        'en',
+        'cs-CZ',
+        'de-DE',
+        'es-ES',
+        'fr-FR',
+        'it-IT',
+        'pl-PL',
+        'pt-BR',
+        'ru-RU',
+        'sr-CS',
+        'vi-VN',
+        'yo-NG',
+        'zh-TW',
+        'zh-CN',
+      ],
   localeConfigs: {
     ar: {
-      direction: 'rtl'
-    }
-  }
-}
+      direction: 'rtl',
+    },
+  },
+};
 
-const pkgJson = require('./package.json')
+const pkgJson = require('./package.json');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -40,7 +61,7 @@ module.exports = {
   // i18n: i18nConfig,
   plugins: [
     'docusaurus-plugin-sass',
-    isProductionDeployment && ['docusaurus-plugin-sentry', { DSN: 'e494731288eb4948852561c19000c423' }]
+    isProductionDeployment && ['docusaurus-plugin-sentry', { DSN: 'e494731288eb4948852561c19000c423' }],
   ].filter(Boolean),
   webpack: {
     jsLoader: (isServer) => ({
@@ -53,7 +74,7 @@ module.exports = {
     }),
   },
   customFields: {
-    description: 'Community guide to creating beautiful applications in Xamarin'
+    description: 'Community guide to creating beautiful applications in Xamarin',
   },
   themeConfig: {
     announcementBar: {
@@ -64,12 +85,14 @@ module.exports = {
     algolia: {
       apiKey: '082aaca59b344caf6d08e21b780cc0c4',
       indexName: 'xamarincommunityguide',
-      contextualSearch: true
+      contextualSearch: true,
     },
-    gtag: isProductionDeployment ? {
-      // You can also use your "G-" Measurement ID here.
-      trackingID: 'G-3ZJ7Q4HRH7'
-    }: undefined,
+    gtag: isProductionDeployment
+      ? {
+          // You can also use your "G-" Measurement ID here.
+          trackingID: 'G-3ZJ7Q4HRH7',
+        }
+      : undefined,
     navbar: {
       title: `Xamarin Community Guide`,
       logo: {
@@ -83,7 +106,7 @@ module.exports = {
           position: 'left',
           label: 'Docs',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        { to: '/blog', label: 'Community Blog', position: 'left' },
         { to: '/help', label: 'Help', position: 'left' },
 
         {
@@ -190,9 +213,7 @@ module.exports = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           sidebarCollapsible: true,
-          remarkPlugins: [
-            [require('@docusaurus/remark-plugin-npm2yarn'), {sync: true}],
-          ],
+          remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]],
           editUrl: ({ locale, docPath }) => {
             if (locale !== 'en') {
               return `https://crowdin.com/project/xamarincommunityguide/${locale}`;
@@ -201,8 +222,8 @@ module.exports = {
           },
         },
         blog: {
-          blogTitle: 'Blog',
-          blogDescription: 'Community guide to creating beautiful applications in Xamarin',
+          blogTitle: 'Community Blog',
+          blogDescription: 'Xamarin Community Guide Blog',
           showReadingTime: true,
           postsPerPage: 5,
           feedOptions: {

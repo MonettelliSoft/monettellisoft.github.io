@@ -14,11 +14,24 @@ module.exports = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   docs: [
     {
-      type: "category",
-      label: "Introduction",
-      items: [
-        "what-is-xamarin-community-guide"
-      ]
+      type: 'category',
+      label: 'Introduction',
+      items: ['what-is-xamarin-community-guide'],
     },
-  ]
+    {
+      type: 'category',
+      label: 'Community Library',
+      items: ['steps-to-contribute', 'team-rules'],
+    },
+    {
+      type: 'category',
+      label: 'Contribution Rules',
+      items: ['contributor-code-of-conduct', 'steps-to-contribute', 'team-rules'],
+    },
+    {
+      type: 'category',
+      label: 'See also',
+      items: ['faq'],
+    },
+  ],
 };

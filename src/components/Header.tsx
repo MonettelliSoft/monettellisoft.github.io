@@ -26,9 +26,9 @@ const Header = (): React.ReactElement => {
             <Link to={useBaseUrl('/docs/what-is-xamarin-community-guide')} className="link-primary">
               <Translate>GET STARTED</Translate>
             </Link>
-            <a href="https://github.com/XamarinCommunityGuide/xamarincommunityguide.github.io/blob/XamarinCommunityGuide-Core/README.md" className="link-secondary">
+            <Link to={useBaseUrl('/docs/steps-to-contribute')} className="link-secondary">
               <Translate>CONTRIBUTE</Translate>
-            </a>
+            </Link>
           </div>
         </div>
         <div className={styles['header--m-2']}>
