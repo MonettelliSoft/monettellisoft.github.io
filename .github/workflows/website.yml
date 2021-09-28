@@ -3,7 +3,7 @@ name: Xamarin Community Guide Website - CI/CD
 on:
   pull_request:
     branches: 
-      - gh-pages3
+      - gh-pages
   push:
     branches: 
       - XamarinCommunityGuide-Core
@@ -42,6 +42,7 @@ jobs:
         env:
           USE_SSH: true
           GIT_USER: git
+          DEPLOYMENT_BRANCH: gh-pages
           CONTEXT: production
         run: |
           git config --global user.email "danielmonetelli@hotmail.com"
