@@ -72,159 +72,197 @@ The following instructions will help you create a publication and send its PR
 for its respective review, remember to follow it step by step, be very patient.
 
 1. **Click on the GitHub icon.**
+
+   <ImageZoom>
+   <a
+     href="https://raw.githubusercontent.com/MonettelliSoft/monettellisoft.github.io/XamarinCommunityGuide-Core/static/img/docs/steps_to_contribute/creating_publications_to_the_community_blog_section/img_step_1.png"
+     data-fancybox
+     data-caption="Click on the GitHub icon">
+     <img src="https://raw.githubusercontent.com/MonettelliSoft/monettellisoft.github.io/XamarinCommunityGuide-Core/static/img/docs/steps_to_contribute/creating_publications_to_the_community_blog_section/img_step_1.png" />
+   </a>
+   </ImageZoom>
+
+   ---
+
 2. **In the repository, give it a star (to motivate the team), then fork to your
    GitHub account.**
+
+   <ImageZoom>
+   <a
+     href="https://raw.githubusercontent.com/MonettelliSoft/monettellisoft.github.io/XamarinCommunityGuide-Core/static/img/docs/steps_to_contribute/creating_publications_to_the_community_blog_section/img_step_2.png"
+     data-fancybox
+     data-caption="In the repository, give it a star (to motivate the team), then fork to your GitHub account">
+     <img src="https://raw.githubusercontent.com/MonettelliSoft/monettellisoft.github.io/XamarinCommunityGuide-Core/static/img/docs/steps_to_contribute/creating_publications_to_the_community_blog_section/img_step_2.png" />
+   </a>
+   </ImageZoom>
+
+   ---
+
 3. **Clone the repository.**
 
-:::note
+   :::note
+   
+   To make changes and preserve git history, you must clone the repository on your local
+   development machine.
+   
+   :::
+   
+   In the following command, change YOUR-USERNAME to your GitHub profile.
+   
+   ```powershell
+   git clone https://github.com/YOUR-USERNAME/xamarincommunityguide.github.io.git
+   ```
+   
+   The following command, directs you to the repository copy.
+   
+   ```powershell
+   cd xamarincommunityguide.github.io
+   ```
+   
+   :::important
+   
+   Make sure you are in the `XamarinCommunityGuide-Core` branch using the `git branch` command.
+   
+   :::
 
-To make changes and preserve git history, you must clone the repository on your local
-development machine.
-
-:::
-
-In the following command, change YOUR-USERNAME to your GitHub profile.
-
-```powershell
-git clone https://github.com/YOUR-USERNAME/xamarincommunityguide.github.io.git
-```
-
-The following command, directs you to the repository copy.
-
-```powershell
-cd xamarincommunityguide.github.io
-```
-
-:::important
-
-Make sure you are in the `XamarinCommunityGuide-Core` branch using the `git branch` command.
-
-:::
+   ---
 
 4. **Install the dependencies.**
 
-Xamarin Community Guide requires certain dependencies to work, don't worry!
-All these dependencies are handled by the _Yarn package manager_, so you only need to run
-one command
+   Xamarin Community Guide requires certain dependencies to work, don't worry!
+   All these dependencies are handled by the _Yarn package manager_, so you only need to run
+   one command
+   
+   ```powershell
+   yarn install
+   ```
+   
+   :::caution
+   
+   Computers using ARM architecture (for example: Mac with M1) may have problems installing
+   dependencies, this is because the sass-style preprocessor is not fully adapted for that type
+   of architecture yet.
+   
+   :::
 
-```powershell
-yarn install
-```
-
-:::caution
-
-Computers using ARM architecture (for example: Mac with M1) may have problems installing
-dependencies, this is because the sass-style preprocessor is not fully adapted for that type
-of architecture yet.
-
-:::
+   ---
 
 5. **Run the project.**
 
-Yarn provides a command to start a server and restart the site as soon as you
-make any changes to the project source code, you can access the site from your browser
-by visiting the URL **_http://localhost:3000/_** (default).
+   Yarn provides a command to start a server and restart the site as soon as you
+   make any changes to the project source code, you can access the site from your browser
+   by visiting the URL **_http://localhost:3000/_** (default).
+   
+   :::note
+   
+   To make the changes, use your favorite code editor, preferably **Visual Studio Code**.
+   
+   :::
+   
+   ```powershell
+   yarn start
+   ```
 
-:::note
-
-To make the changes, use your favorite code editor, preferably **Visual Studio Code**.
-
-:::
-
-```powershell
-yarn start
-```
+   ---
 
 6. **In the blog folder, in the author.yml file, add your public data as a contributor.**
 
-```powershell {4}
-xamarincommunityguide.github.io
-├── blog
-│   ├── ...
-│   └── authors.yml
-└── ...
-```
+   ```powershell {4}
+   xamarincommunityguide.github.io
+   ├── blog
+   │   ├── ...
+   │   └── authors.yml
+   └── ...
+   ```
+   
+   ```yml
+   nickname:
+     name: your-public-name
+     title: honorary-title-of-collaborator
+     url: public-url-of-github-or-twitter-account
+     image_url: public-image-of-your-github-or-twitter-account
+   
+   danielmonettelli:
+     name: Daniel Angel Monettelli L.
+     title: Founder of Xamarin Community Guide
+     url: https://github.com/danielmonettelli
+     image_url: https://github.com/danielmonettelli.png
+   ```
+   
+   :::important
+   
+   In the title: `honorary-title-of-collaborator` you must add this:
+   
+   - If you are a contributor: `Xamarin Community Guide Contributor`.
+   - If you are from the team: `Xamarin Community Guide Team`.
+   
+   :::
+   
+   :::warning
+   
+   To avoid authorship conflicts in publications, do not duplicate
+   or copy someone else's `nickname`.
+   
+   :::
 
-```yml
-nickname:
-  name: your-public-name
-  title: honorary-title-of-collaborator
-  url: public-url-of-github-or-twitter-account
-  image_url: public-image-of-your-github-or-twitter-account
-
-danielmonettelli:
-  name: Daniel Angel Monettelli L.
-  title: Founder of Xamarin Community Guide
-  url: https://github.com/danielmonettelli
-  image_url: https://github.com/danielmonettelli.png
-```
-
-:::important
-
-In the title: `honorary-title-of-collaborator` you must add this:
-
-- If you are a contributor: `Xamarin Community Guide Contributor`.
-- If you are from the team: `Xamarin Community Guide Team`.
-
-:::
-
-:::warning
-
-To avoid authorship conflicts in publications, do not duplicate
-or copy someone else's `nickname`.
-
-:::
+   ---
 
 7. **In the blog folder, create an MDX file, and add the date and name
    of your post separated by hyphens and in lower case.**
 
-```powershell {3,4}
-xamarincommunityguide.github.io
-├── blog
-│   ├── 2021-08-05-my-first-post.mdx
-│   ├── 2021-09-22-my-second-post.mdx
-│   └── ...
-└── ...
-```
+   ```powershell {3,4}
+   xamarincommunityguide.github.io
+   ├── blog
+   │   ├── 2021-08-05-my-first-post.mdx
+   │   ├── 2021-09-22-my-second-post.mdx
+   │   └── ...
+   └── ...
+   ```
+
+   ---
 
 8. **At the top of your publication, add the front matter block,
    followed by the imported components.**
 
-```md
----
-slug: my-first-post
-title: My first post
-authors: [nickname]
-tags: [Tag1, Tag2, Tag3]
----
+   ```md
+   ---
+   slug: my-first-post
+   title: My first post
+   authors: [nickname]
+   tags: [Tag1, Tag2, Tag3]
+   ---
+   
+   import Link from '@docusaurus/Link';
+   import ImageZoom from '/src/components/imageZoom/fancybox.js';
+   import ReactPlayer from 'react-player';
+   import Tabs from '@theme/Tabs';
+   import TabItem from '@theme/TabItem';
+   import BrowserWindow from '/src/components/BrowserWindow/browserWindow.tsx';
+   import TOCInline from '@theme/TOCInline';
+   ```
+   
+   :::caution
+   
+   - For better navigation, the description of the `slug` has to be identical
+     to the file of its publication.
+   - Make sure to add your created `nickname` in the `authors` description.
+   - In the `tags`, in addition to those that represent your publication,
+     add if it is in `Spanish` or `English`.
+   
+   :::
 
-import Link from '@docusaurus/Link';
-import ImageZoom from '/src/components/imageZoom/fancybox.js';
-import ReactPlayer from 'react-player';
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import BrowserWindow from '/src/components/BrowserWindow/browserWindow.tsx';
-import TOCInline from '@theme/TOCInline';
-```
-
-:::caution
-
-- For better navigation, the description of the `slug` has to be identical
-  to the file of its publication.
-- Make sure to add your created `nickname` in the `authors` description.
-- In the `tags`, in addition to those that represent your publication,
-  add if it is in `Spanish` or `English`.
-
-:::
+   ---
 
 9. **Main structure of the publication.**
 
-Xamarin Community Guide made two posts:
+   Xamarin Community Guide made two posts:
+   
+   - The Post Template: It is a group of components that you can use to enrich
+     your publication.
+   
+   - My first post: It is a concept of how your post should be.
 
-- The Post Template: It is a group of components that you can use to enrich
-  your publication.
-
-- My first post: It is a concept of how your post should be.
+   ---
 
 10. **Submit your pull request.**
 
