@@ -117,15 +117,29 @@ Reference-style: ![alt text][logo]
 Images from any folder can be used by providing path to file. Path should be relative to the original markdown file or absolute to the `/static` folder.
 
 <ImageZoom>
-  <a
-    href="https://raw.githubusercontent.com/xamarin/Xamarin.Forms/5.0.0/Assets/banner.png"
-    data-fancybox
-    data-caption="Xamarin.Forms">
-    <img src="https://raw.githubusercontent.com/xamarin/Xamarin.Forms/5.0.0/Assets/banner.png" />
-  </a>
+<a
+  href="https://raw.githubusercontent.com/xamarin/Xamarin.Forms/5.0.0/Assets/banner.png"
+  data-fancybox
+  data-caption="Xamarin.Forms">
+  <img src="https://raw.githubusercontent.com/xamarin/Xamarin.Forms/5.0.0/Assets/banner.png" />
+</a>
 </ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', margin: '6px 0px 20px', fontWeight: 'bold' }}>
   Zoom image
+</p>
+
+Gif with zoom
+
+<ImageZoom>
+<a
+  href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/Publication_5/5_3/publication_5_3_result.gif"
+  data-fancybox
+  data-caption="Gif with zoom">
+  <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/Publication_5/5_3/publication_5_3_result.gif" />
+</a>
+</ImageZoom>
+<p style={{ textAlign: 'center', fontSize: '.8rem', margin: '6px 0px 20px', fontWeight: 'bold' }}>
+  Gif with zoom
 </p>
 
 ---
@@ -139,9 +153,32 @@ Images from any folder can be used by providing path to file. Path should be rel
   Building Beautiful Apps with Xamarin.Forms
 </p>
 
-### By direct local route with subtitles
+### By direct local route with subtitles 
 
 <video width="99%" controls={true}>
+<source src="/videos/post_template/one_dev_minute_what_is_devops.mp4" type="video/mp4" />
+<track
+    kind="subtitles"
+    label="Spanish"
+    src="/videos/post_template/one_dev_minute_what_is_devops_es.vtt"
+    srcLang="es"
+    default={true}
+/>
+<track
+    kind="subtitles"
+    label="English"
+    src="/videos/post_template/one_dev_minute_what_is_devops_en.vtt"
+    srcLang="en"
+    default={false}
+/>
+</video>
+<p style={{ textAlign: 'center', fontSize: '.8rem', margin: '6px 0px 20px', fontWeight: 'bold' }}>
+  What is DevOps? | One Dev Question
+</p>
+
+### By direct local route with subtitles (autoplay loop)
+
+<video autoplay loop width="99%" controls={true}>
 <source src="/videos/post_template/one_dev_minute_what_is_devops.mp4" type="video/mp4" />
 <track
     kind="subtitles"
