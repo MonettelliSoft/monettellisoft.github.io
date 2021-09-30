@@ -106,6 +106,11 @@ Some text to show that the reference links can follow later.
 
 ## Images
 
+Images from any folder can be used by providing path to file. Path should be relative to 
+the original markdown file or absolute to the `/static` folder.
+
+### Markdown image style
+
 Here's our logo (hover to see the title text):
 
 Inline-style: ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
@@ -114,13 +119,13 @@ Reference-style: ![alt text][logo]
 
 [logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
 
-Images from any folder can be used by providing path to file. Path should be relative to the original markdown file or absolute to the `/static` folder.
+### Zoom image
 
 <ImageZoom>
 <a
   href="https://raw.githubusercontent.com/xamarin/Xamarin.Forms/5.0.0/Assets/banner.png"
   data-fancybox
-  data-caption="Xamarin.Forms">
+  data-caption="Zoom image">
   <img src="https://raw.githubusercontent.com/xamarin/Xamarin.Forms/5.0.0/Assets/banner.png" />
 </a>
 </ImageZoom>
@@ -128,18 +133,18 @@ Images from any folder can be used by providing path to file. Path should be rel
   Zoom image
 </p>
 
-Gif with zoom
+### Zoom GIF
 
 <ImageZoom>
 <a
   href="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/Publication_5/5_3/publication_5_3_result.gif"
   data-fancybox
-  data-caption="Gif with zoom">
+  data-caption="Zoom GIF">
   <img src="https://raw.githubusercontent.com/danielmonettelli/danielmonettelli.github.io/master/assets/img/images/Publication_5/5_3/publication_5_3_result.gif" />
 </a>
 </ImageZoom>
 <p style={{ textAlign: 'center', fontSize: '.8rem', margin: '6px 0px 20px', fontWeight: 'bold' }}>
-  Gif with zoom
+  Zoom GIF
 </p>
 
 ---
@@ -148,7 +153,7 @@ Gif with zoom
 
 ### Using HTTPS
 
-<ReactPlayer url="https://www.youtube.com/watch?v=z4LiPa8ixyQ" controls={true} />
+<ReactPlayer width="99%" url="https://www.youtube.com/watch?v=z4LiPa8ixyQ" controls={true} />
 <p style={{ textAlign: 'center', fontSize: '.8rem', margin: '12px 0px 20px', fontWeight: 'bold' }}>
   Building Beautiful Apps with Xamarin.Forms
 </p>
@@ -162,15 +167,13 @@ Gif with zoom
     label="Spanish"
     src="/videos/blog/post_template/one_dev_minute_what_is_devops_es.vtt"
     srcLang="es"
-    default={true}
-/>
+    default={true} />
 <track
     kind="subtitles"
     label="English"
     src="/videos/blog/post_template/one_dev_minute_what_is_devops_en.vtt"
     srcLang="en"
-    default={false}
-/>
+    default={false} />
 </video>
 <p style={{ textAlign: 'center', fontSize: '.8rem', margin: '6px 0px 20px', fontWeight: 'bold' }}>
   What is DevOps? | One Dev Question
@@ -185,15 +188,13 @@ Gif with zoom
     label="Spanish"
     src="/videos/blog/post_template/one_dev_minute_what_is_devops_es.vtt"
     srcLang="es"
-    default={true}
-/>
+    default={true} />
 <track
     kind="subtitles"
     label="English"
     src="/videos/blog/post_template/one_dev_minute_what_is_devops_en.vtt"
     srcLang="en"
-    default={false}
-/>
+    default={false} />
 </video>
 <p style={{ textAlign: 'center', fontSize: '.8rem', margin: '6px 0px 20px', fontWeight: 'bold' }}>
   What is DevOps? | One Dev Question
@@ -308,8 +309,7 @@ There must be at least 3 dashes separating each header cell. The outer pipes (|)
     { label: 'Apple 1', value: 'apple' },
     { label: 'Orange 1', value: 'orange' },
     { label: 'Banana 1', value: 'banana' },
-  ]}
->
+  ]}>
   <TabItem value="apple" label="Apple 2">
     This is an apple 🍎
   </TabItem>
