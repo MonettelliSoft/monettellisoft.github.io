@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkxamarin_community_guide=self.webpackChunkxamarin_community_guide||[]).push([[5178],{1993:function(s){s.exports=JSON.parse('{"name":"My-first-post","permalink":"/docs/tags/my-first-post","docs":[{"id":"my-first-post","title":"My first post","description":"<a","permalink":"/docs/my-first-post"}],"allTagsPath":"/docs/tags"}')}}]);
