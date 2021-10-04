@@ -3,12 +3,12 @@
 
 :root {
   --ifm-color-primary: var(--xamarincommunityguide-color);
-  --ifm-color-primary-dark: #2e3f5f;
-  --ifm-color-primary-darker: #2f456d;
-  --ifm-color-primary-darkest: #363e4e;
-  --ifm-color-primary-light: #435068;
-  --ifm-color-primary-lighter: #54617a;
-  --ifm-color-primary-lightest: #55637c;
+  --ifm-color-primary-dark: #264378;
+  --ifm-color-primary-darker: #243f71;
+  --ifm-color-primary-darkest: #1d345d;
+  --ifm-color-primary-light: #2e5192;
+  --ifm-color-primary-lighter: #305599;
+  --ifm-color-primary-lightest: #3760ad;
 
   /* custom palette */
   --dark-blue: #004074;
@@ -31,12 +31,12 @@
 
 html[data-theme='dark']:root {
   --ifm-color-primary: #4284ff;
-  --ifm-color-primary-dark: #003cac;
-  --ifm-color-primary-darker: #0038a1;
-  --ifm-color-primary-darkest: #002f86;
-  --ifm-color-primary-light: #0048ce;
-  --ifm-color-primary-lighter: #004fe2;
-  --ifm-color-primary-lightest: #1869ff;
+  --ifm-color-primary-dark: #226fff;
+  --ifm-color-primary-darker: #1265ff;
+  --ifm-color-primary-darkest: #004ee1;
+  --ifm-color-primary-light: #6299ff;
+  --ifm-color-primary-lighter: #72a3ff;
+  --ifm-color-primary-lightest: #a2c3ff;
 
   // Top navigation color
   --ifm-navbar-background-color: #17191a;
@@ -49,7 +49,6 @@ html[data-theme='dark']:root {
   --p-color: #e8eaeb;
   --xamarincommunityguide-color: #d8d4ff;
   --grey: #f3f3f338;
-
 
   --custom-shadow-xl: 0 30px 60px 0 rgba(0, 0, 0, 0.1);
 }
@@ -126,8 +125,6 @@ html[data-theme='dark'] {
   width: 100%;
 }
 
-
-
 // Test
 a.card {
   text-decoration: none !important;
@@ -138,18 +135,16 @@ a.card {
   /* background-color: var(--ifm-background-color); */
 }
 
-
 a.card .card__body {
   flex: 1;
   flex-grow: 1;
 }
 
-
 // Card style
 a.card:hover {
   transition: all 0.2s ease;
   border: 2px solid var(--red);
-  box-shadow:var(--custom-shadow-xl), 0 0 0 1px var(--ifm-color-primary-darkest) !important;
+  box-shadow: var(--custom-shadow-xl), 0 0 0 1px var(--ifm-color-primary-darkest) !important;
 }
 
 a.hash-link {
