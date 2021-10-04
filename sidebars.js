@@ -30,6 +30,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Post Templates',
+      items: ['post-template', 'my-first-post'],
+    },
+    {
+      type: 'category',
       label: 'See also',
       items: ['faq'],
     },
