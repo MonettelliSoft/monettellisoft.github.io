@@ -3,7 +3,7 @@ name: Xamarin Community Guide Website - CI/CD
 on:
   pull_request:
     branches: 
-      - gh-pages
+      - XamarinCommunityGuide-Core
   push:
     branches: 
       - XamarinCommunityGuide-Core
