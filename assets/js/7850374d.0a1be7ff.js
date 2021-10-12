@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkxamarin_community_guide=self.webpackChunkxamarin_community_guide||[]).push([[5355],{5915:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"/blog/tags/english","name":"English","count":2,"permalink":"/blog/tags/english"}')}}]);
