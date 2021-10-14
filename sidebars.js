@@ -26,7 +26,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Contribution Rules',
-      items: ['contributor-code-of-conduct', 'steps-to-contribute', 'team-rules'],
+      items: ['contributor-covenant-code-of-conduct', 'steps-to-contribute', 'team-rules'],
     },
     {
       type: 'category',
